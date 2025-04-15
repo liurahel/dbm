@@ -12,8 +12,8 @@ export default function NavBar() {
   ];  
 
   return (
-    <div className="h-20 w-6xl fixed top-8 z-50 bg-[#FFF9F0] py-4 shadow-md rounded-[20px]">
-        <div className="flex flex-wrap justify-center max-w-6xl mx-auto">
+    <div className="flex items-center h-20 w-6xl fixed top-8 z-50 bg-[#FFF9F0] py-4 shadow-md rounded-[20px]">
+        <div className="flex flex-wrap max-w-6xl mx-auto">
             {/* 左側選單連結 */}
             <div className="flex space-x-6">
                 {navBarContent.map(({ to, label }) => (
