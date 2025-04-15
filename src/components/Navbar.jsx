@@ -32,6 +32,7 @@ export default function NavBar() {
             </div>
 
             {/* 右側購物車 */}
+            <FontAwesomeIcon icon="fa-regular fa-user" style={{color: "#854d8e",}} />
             <div className="flex items-center">
             <CartSummary />
             </div>
