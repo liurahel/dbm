@@ -7,15 +7,14 @@
   default: true; /* set as default */
   prefersdark: false; /* set as default dark mode (prefers-color-scheme:dark) */
   color-scheme: light; /* color of browser-provided UI */
-  --color-primary: #6366F2;
+  --color-primary: #FFF9F0;
 }
 
 html,
 body {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
-  background-color: #111828;
-  color: white;
+  background-color: #FFF9F0;
 }
 
 .main-layout {
@@ -27,17 +26,22 @@ body {
     'footer'
   ;
   grid-template-rows: auto 1fr auto;
-  gap: 1rem;
 }
 
 .header {
   grid-area: header;
+  background-color: #854D8E;
+  color: #FBCD5C;
 }
 
 .content {
   grid-area: content;
+  background-color: #FFF9F0;
+  color: #2B2B2B;
 }
 
 .footer {
   grid-area: footer;
+  background-color: #854D8E;
+  color: #FBCD5C;
 }

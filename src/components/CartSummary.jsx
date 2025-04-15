@@ -22,7 +22,6 @@ function CartSummary() {
                 {count > 0 && <span className="indicator-item badge badge-primary font-bold">{count}</span>}
                 <ShoppingBasket strokeWidth={1.5} className="w-5 h-5 md:w-6 md:h-6 text-current group-hover:scale-105 transition-transform" />
             </div>
-            <p className="text-xs opacity-60 mt-[-4px]">Shopping bag</p>
         </nav>
         <BasketModal
             isOpen={isOpen}

@@ -15,7 +15,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* 追蹤我們 
+        {/* 追蹤我們 */}
         <div className="footer-followUs">
           <p className="font-extrabold">FOLLOW US</p>
           <div className="flex items-center space-x-4">
@@ -29,7 +29,7 @@ export default function Footer() {
               <img className="w-8 h-8" src="/images/nn-icon-tiktok.svg" alt="tiktok" />
             </a>
           </div>
-        </div>*/}
+        </div>
 
         {/* 聯絡我們 */}
         <div className="footer-contactUs">
@@ -39,7 +39,7 @@ export default function Footer() {
 
         {/* 版權聲明 */}
         <p className="footer-copyRight text-center text-gray-400 opacity-60">
-          © 2025 Copyright Digital Technology Design 111219035
+        ©不要B我市集
         </p>
       </footer>
     </div>
