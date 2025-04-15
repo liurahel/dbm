@@ -8,8 +8,8 @@ function Home() {
     return (
       <div className="container mx-auto main-layout bg-gray-900 min-h-screen">
         <Header 
-          title="Welcome to the Store"
-          slogan="The best place to buy your favorite products"
+          title="線上市集"
+          // slogan="The best place to buy your favorite products"
         />
         <ProductList products={products} className="content" /> 
         <Footer className="footer" />
