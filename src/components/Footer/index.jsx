@@ -8,7 +8,7 @@ export default function Footer() {
 
       <footer className="footer text-[#FBCD5C] py-6">
         
-        <div className="flex w-6xl">
+        <div className="flex w-6xl items-center">
           {/* 描述區塊 */}
           <div className="footer-content">
             <p>+886-2-1234-1234</p>
