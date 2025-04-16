@@ -3,11 +3,7 @@ import './footer.css';
 export default function Footer() {
   return (
     <div>
-      {/* 分隔線 */}
-      <hr className="my-6 w-full border-t-2 border-primary rounded-sm opacity-100" />
-
       <footer className="footer text-[#FBCD5C] py-6">
-        
         <div className="flex w-6xl">
           {/* 描述區塊 */}
           <div className="footer-content">

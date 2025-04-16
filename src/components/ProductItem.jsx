@@ -8,14 +8,14 @@ function ProductItem({ product }) {
             <Link to={`/products/id/${product.id}`}>
                <img className="w-full" src={product.cover} alt={product.title} />
             </Link>
-            <div className="p-4">
-               <h6 className="text-white opacity-80 mb-1">
+            <div className="text-[#2B2B2B] p-4">
+               <h6 className="opacity-80 mb-1">
                   {product.author}
                </h6>
-               <h5 className="text-white mb-3">
+               <h5 className="mb-3">
                   {product.title}
                </h5>
-               <p className="text-white opacity-70 mb-3">
+               <p className="opacity-70 mb-3">
                   {_.truncate(product.summary, { length: 60, omission: " ... " })}
                </p>
                <div className="flex justify-between flex-wrap">
