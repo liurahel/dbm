@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router';
 import CartSummary from './CartSummary';
 import SetColorMode from "../components/SetColorMode";
-import LoginModal from "./LoginModal";
 
 export default function NavBar() {
   const navBarContent = [
@@ -34,13 +33,12 @@ export default function NavBar() {
             </div>
 
             {/* 右側購物車 */}
-            <div className="flex items-center">
+            <div className="flex items-center text-[#854D8E]">
               <CartSummary />
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center text-[#854D8E]">
               <SetColorMode />
             </div>
-            
         </div>
     </div>
   );
