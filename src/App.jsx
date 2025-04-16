@@ -3,6 +3,7 @@ import { Provider } from "react-redux"
 
 import "./App.css";
 import Home from "./pages/Home";
+import OnlineShop from "./pages/OnlineShop"
 import Product from "./pages/Product";
 import store from "./redux/store";
 
@@ -12,8 +13,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/online-shop" element={<OnlineShop />} />
           <Route path="products">
-            {/* <Route path="category/:categoryName" element={<Home />} /> */}
             <Route path="id/:productId" element={<Product />} />
           </Route>
         </Routes>
