@@ -1,5 +1,4 @@
 import ProductItem from './ProductItem'
-// import products from '../json/books.json'
 
 function ProductList({products}) {
    return (
