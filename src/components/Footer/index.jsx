@@ -33,13 +33,13 @@ export default function Footer() {
               transition-all duration-200 transform hover:scale-125" />
             </div>
           </div>
+        </div>
 
           {/* 版權聲明 */}
           <div className="footer-copyRight">
             <hr className="my-4 w-2xl" />
             <p>©不要B我市集</p>
           </div>
-        </div>
       </footer>
     </div>
   );
