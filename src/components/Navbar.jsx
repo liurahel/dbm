@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router';
 import CartSummary from './CartSummary';
 import SetColorMode from "../components/SetColorMode";
+import LoginModal from "./LoginModal";
 
 export default function NavBar() {
   const navBarContent = [
@@ -18,24 +19,29 @@ export default function NavBar() {
             {/* 左側選單連結 */}
             <div className="flex space-x-6">
                 {navBarContent.map(({ to, label }) => (
-                    <NavLink
-                    key={to}
-                    to={to}
+                  <NavLink
+                  key={to}
+                  to={to}
                     className={({ isActive }) =>
                         `mx-6 text-[#854D8E] text-base font-semibold transition-all duration-500 ease-in-out ${
                         isActive ? "opacity-100 font-normal" : "opacity-70"
                         } hover:opacity-100 hover:[text-shadow:0px_0px_30px_white`
                     }
-                    >
-                    {label}
-                    </NavLink>
+                  >
+                  {label}
+                  </NavLink>
                 ))}
             </div>
 
             {/* 右側購物車 */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center">
               <CartSummary />
+            </div>
+            <div className="flex items-center">
               <SetColorMode />
+            </div>
+            <div className="flex items-center">
+              <LoginModal />
             </div>
         </div>
       </div>
