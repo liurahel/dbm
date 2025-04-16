@@ -14,7 +14,8 @@ export default function NavBar() {
   return (
     <div className="flex items-center h-20 w-6xl fixed top-8 z-50 bg-[#FFF9F0] px-4 py-4 shadow-md rounded-[20px]">      
         <div className="flex items-center justify-center max-w-6xl mx-auto">
-        <img src="/images/企劃書.png" alt="不要B我LOGO" className="w-30 h-auto absolute item-center left-2 md:left-6 cursor-pointer" />
+        <Link to="/">
+        <img src="/images/企劃書.png" alt="不要B我LOGO" className="w-30 h-auto absolute item-center left-2 md:left-6 top-1.5 cursor-pointer" /></Link>
             {/* 左側選單連結 */}
             <div className="flex space-x-6">
                 {navBarContent.map(({ to, label }) => (
