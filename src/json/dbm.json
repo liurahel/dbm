@@ -1,56 +1,56 @@
 [
     {
        "id": 1,
-       "title": "The Great Gatsby",
-       "author": "F. Scott Fitzgerald",
-       "summary": "In 1922, Nick Carraway, a Yale graduate and World War I veteran, moves to Long Island’s North Shore and becomes entangled with the extravagant Jay Gatsby, who is famous for his lavish parties. The story explores themes of wealth, society, and love in the American Dream, highlighting the moral decay hidden behind the glamorous facade of the 1920s.",
-       "price": 15,
-       "stock": 45,
-       "cover": "/images/book1.png"
+       "title": "文具車 | 吊飾",
+       "author": "右手超人",
+       "summary": "可以當鑰匙圈（以右手超人吊飾為例\n 扣環的開法（以狗狗雲吊飾為例）找到接縫處，右手往右上，左手往左下，同時向左右拉開\n 尺寸：扣環直徑 4.5 cm，吊飾本身約 13.5x3.5 cm\n材質：帆布（有點米白，不是純白)\n 產地：台灣",
+       "price": 280,
+       "stock": 10,
+       "cover": "public/images/101.png"
    },
    {
        "id": 2,
-       "title": "To Kill a Mockingbird",
-       "author": "Harper Lee",
-       "summary": "Set in the Deep South during the 1930s, this novel narrates the experiences of Scout Finch as her father, Atticus Finch, defends a Black man accused of raping a white woman. Through Scout’s eyes, we witness racial injustice and moral growth, as well as the complexities of human behavior in a divided society.",
-       "price": 20,
-       "stock": 60,
-       "cover": "/images/book2.png"
+       "title": "右手超人 | 吊飾",
+       "author": "右手超人",
+       "summary": "把超人掛在包包上，和超人一起去好多地方～\n 也可以當鑰匙圈（以右手超人吊飾為例\n 扣環的開法（以狗狗雲吊飾為例）找到接縫處，右手往右上，左手往左下，同時向左右拉開\n 尺寸：扣環直徑 4.5 cm，吊飾本身約 13.5x3.5 cm\n材質：帆布（有點米白，不是純白)\n 產地：台灣",
+       "price": 280,
+       "stock": 8,
+       "cover": "public/images/103.png"
    },
    {
        "id": 3,
-       "title": "1984",
-       "author": "George Orwell",
-       "summary": "In George Orwell's dystopian novel, society is under constant surveillance by Big Brother. The protagonist, Winston Smith, works at the Ministry of Truth, where he alters historical records to fit government propaganda. As he becomes disillusioned with this oppressive regime, Winston seeks truth and rebellion, leading to a tale of political intrigue and psychological manipulation.",
-       "price": 18,
-       "stock": 34,
-       "cover": "/images/book3.png"
+       "title": "抱抱鬼 | 吊飾",
+       "author": "右手超人",
+       "summary": "抱抱鬼乖乖地抱著右手超人\n 也可以當鑰匙圈（以右手超人吊飾為例\n 扣環的開法（以狗狗雲吊飾為例）找到接縫處，右手往右上，左手往左下，同時向左右拉開\n 尺寸：扣環直徑 4.5 cm，吊飾本身約 13.5x3.5 cm\n材質：帆布（有點米白，不是純白)\n 產地：台灣",
+       "price": 280,
+       "stock": 5,
+       "cover": "public/images/102.png"
    },
    {
        "id": 4,
-       "title": "Pride and Prejudice",
-       "author": "Jane Austen",
-       "summary": "This timeless novel centers on Elizabeth Bennet, a young woman navigating issues of class, marriage, and morality in 19th century England. Through her spirited intelligence, Elizabeth confronts her own prejudice against the wealthy Mr. Darcy, revealing deeper themes of love, integrity, and social expectations. Austen's sharp wit and social commentary resonate throughout the story.",
-       "price": 25,
-       "stock": 50,
-       "cover": "/images/book4.png"
+       "title": "透明割型小貼紙 | 喫茶",
+       "author": "右手超人",
+       "summary": "是透明有割型的，底層有上白墨，貼在顏色深的地方也看得到～\n 尺寸：整張 9x13 公分，單個圖案高約 3 公分\n 材質：透明防水貼紙\n 產地：台灣",
+       "price": 80,
+       "stock": 7,
+       "cover": "public/images/104.png"
    },
    {
        "id": 5,
-       "title": "Moby-Dick",
-       "author": "Herman Melville",
-       "summary": "This novel follows Ishmael, who joins Captain Ahab on a whaling voyage to catch the elusive Moby Dick, a giant white whale. The narrative delves into themes of obsession, revenge, and the complexities of nature, presenting philosophical reflections on humanity's place in the universe. Melville's rich prose and symbolism make this an enduring classic in American literature.",
-       "price": 30,
-       "stock": 40,
-       "cover": "/images/book5.png"
+       "title": "透明割型小貼紙 | 狗狗雲日常",
+       "author": "右手超人",
+       "summary": "是透明有割型的，底層有上白墨，貼在顏色深的地方也看得到～\n 尺寸：整張 9x13 公分，單個圖案高約 3 公分\n 材質：透明防水貼紙\n 產地：台灣",
+       "price": 80,
+       "stock": 10,
+       "cover": "public/images/105.png"
    },
    {
        "id": 6,
-       "title": "The Catcher in the Rye",
-       "author": "J.D. Salinger",
-       "summary": "The story follows Holden Caulfield, a teenager who has been expelled from his prep school. He wanders New York City, confronting the phoniness of the adult world while grappling with feelings of alienation and loss. Through his cynical perspective and desire to protect the innocence of youth, Salinger's novel has become a poignant exploration of identity and adolescence.",
-       "price": 22,
-       "stock": 55,
-       "cover": "/images/book6.png"
+       "title": "透明割型小貼紙 | 理想生活",
+       "author": "右手超人",
+       "summary": "是透明有割型的，底層有上白墨，貼在顏色深的地方也看得到～\n 尺寸：整張 9x13 公分，單個圖案高約 3 公分\n 材質：透明防水貼紙\n 產地：台灣",
+       "price": 80,
+       "stock": 6,
+       "cover": "public/images/106.png"
    }
  ]

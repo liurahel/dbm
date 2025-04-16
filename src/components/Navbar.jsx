@@ -33,10 +33,8 @@ export default function NavBar() {
             </div>
 
             {/* 右側購物車 */}
-            <div className="flex items-center text-[#854D8E]">
+            <div className="justify-center text-[#854D8E]">
               <CartSummary />
-            </div>
-            <div className="flex items-center text-[#854D8E]">
               <SetColorMode />
             </div>
         </div>
