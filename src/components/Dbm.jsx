@@ -7,6 +7,7 @@ function Dbm() {
     <div className="flex flex-col items-center content !mb-0 w-full max-w-screen-lg mx-auto">
 
       {/* 給喜歡圖文創作的你 */}
+
       <span className="text-[#1A1A1A] text-5xl font-bold sm:text-3xl">給喜歡圖文創作的你</span>
       <div className="flex items-center gap-3 text-left self-start sm:mt-10 mt-20 mb-4">
             <div className="w-6 h-9 sm:w-4 sm:h-7 bg-[#854D8E] rounded-tl-lg rounded-bl-lg"></div>

@@ -11,9 +11,10 @@ function Shopper() {
         </Helmet>
         <Header 
           title="攤位名單"
+          className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold"
         />
-        <ShopperList className="content" /> 
-        <Footer className="footer" />
+        <ShopperList className="content max-w-full sm:max-w-2xl lg:max-w-4xl mx-auto" /> 
+        <Footer className="footer mt-8 sm:mt-12 lg:mt-16" />
       </div>
     )
   }
