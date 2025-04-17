@@ -25,15 +25,15 @@ export default function AddToBasket({ product, qty }) {
 
     return (
     <>
-        <button className="btn btn-primary px-8 py-5" onClick={addToCart}>
-            <ShoppingBasket strokeWidth={1} className="w-5 h-5 md:w-6 md:h-6 text-current group-hover:scale-105 transition-transform" />
-            <span className="font-thin ml-3">加到購物車</span>
+        <button className="btn btn-primary px-8 py-5 bg-[#854D8E] text-[#FFF9F0] rounded-lg hover:bg-[#743D7A] transition-al" onClick={addToCart}>
+            <ShoppingBasket strokeWidth={1} className="w-5 h-5 md:w-6 md:h-6 group-hover:scale-105 transition-transform " />
+            <span className="font-medium ml-3">加到購物車</span>
         </button>
         {showToast && (
             <div className="toast toast-end">
-              <div className="alert">
+              <div className="alert bg-[#FFF9F0] text-[#2B2B2B]">
                 <span>
-                  {qty} {qty > 1 ? "pieces" : "piece"} 個 {product.name} {qty > 1 ? "have" : "has"} 已加到購物車
+                  {qty} {qty > 1 ? "個" : "piece"} {product.title} {qty > 1 ? "已" : "has"} 加到購物車
                 </span>
               </div>
             </div>
