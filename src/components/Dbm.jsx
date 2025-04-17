@@ -10,7 +10,7 @@ function Dbm() {
       <h1 className="text-[#1A1A1A] text-3xl font-bold">給喜歡圖文創作的你</h1>
       <div className="flex items-center gap-3 text-left self-start mt-10 mb-4">
             <div className="w-4 h-7 bg-[#854D8E] rounded-tl-lg rounded-bl-lg"></div>
-            <h2 className="text-[#1A1A1A] text-2xl font-normal">開心，是我們所願。</h2>
+            <span className="text-[#1A1A1A] text-2xl font-medium">開心，是我們所願。</span>
       </div>
       <div className="flex justify-between items-start gap-6 w-full">
         <span className="text-[#2B2B2B] leading-relaxed mb-0">

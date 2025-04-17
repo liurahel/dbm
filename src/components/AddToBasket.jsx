@@ -26,8 +26,8 @@ export default function AddToBasket({ product, qty }) {
     return (
     <>
         <button className="btn btn-primary px-8 py-5 bg-[#854D8E] text-[#FFF9F0] rounded-lg hover:bg-[#743D7A] transition-al" onClick={addToCart}>
-            <ShoppingBasket strokeWidth={1} className="w-5 h-5 md:w-6 md:h-6 group-hover:scale-105 transition-transform " />
-            <span className="font-medium ml-3">加到購物車</span>
+            <ShoppingBasket strokeWidth={1} className="w-5 h-5 md:w-6 md:h-6 group-hover:scale-105 transition-transform text-[#FFF9F0]" />
+            <span className="font-normal ml-3 text-[#FFF9F0]">加到購物車</span>
         </button>
         {showToast && (
             <div className="toast toast-end">

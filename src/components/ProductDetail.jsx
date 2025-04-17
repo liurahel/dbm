@@ -24,7 +24,7 @@ function ProductDetail({ product }) {
             {/* 價格與按鈕 */}
             <div className="flex flex-col gap-4">
               <p className="text-2xl font-semibold text-[#1A1A1A]">NT$ {product.price}</p>
-            <div className="flex items-center gap-2 text-[#2B2B2B]">
+            <div className="flex justify-between items-center gap-2 text-[#2B2B2B]">
               <span className="font-bold" >數量</span>
               <select
                 className="select select-bordered w-20 h-8"
@@ -37,12 +37,8 @@ function ProductDetail({ product }) {
                   </option>
                 ))}
               </select>
-              <p className="text-[#686868]" >
-                <span>目前庫存</span>：{product.stock > 0 ? "有現貨" : "缺貨中"}
-              </p>
-              <p className="ml-auto font-bold text-[#1A1A1A]">
-                <span>總價</span> NT$ {product.price * qty}
-              </p>
+              <span className="text-[#686868]">目前庫存</span>：{product.stock > 0 ? "有現貨" : "缺貨中"}
+              <span className="ml-auto font-bold text-[#1A1A1A]">總價 NT$ {product.price * qty}</span>
             </div>
             <AddToBasket  product={product} qty={qty} />
           </div>
