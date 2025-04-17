@@ -7,50 +7,54 @@ function Dbm() {
     <div className="flex flex-col items-center content !mb-0 w-full max-w-screen-lg mx-auto">
 
       {/* 給喜歡圖文創作的你 */}
-      <h1 className="text-[#1A1A1A] text-3xl font-bold">給喜歡圖文創作的你</h1>
-      <div className="flex items-center gap-3 text-left self-start mt-10 mb-4">
-            <div className="w-4 h-7 bg-[#854D8E] rounded-tl-lg rounded-bl-lg"></div>
-            <h2 className="text-[#1A1A1A] text-2xl font-normal">開心，是我們所願。</h2>
+      <span className="text-[#1A1A1A] text-5xl font-bold sm:text-3xl">給喜歡圖文創作的你</span>
+      <div className="flex items-center gap-3 text-left self-start sm:mt-10 mt-20 mb-4">
+            <div className="w-6 h-9 sm:w-4 sm:h-7 bg-[#854D8E] rounded-tl-lg rounded-bl-lg"></div>
+            <span className="text-[#1A1A1A] text-4xl sm:text-2xl font-medium">開心，是我們所願。</span>
       </div>
-      <div className="flex justify-between items-start gap-6 w-full">
-        <span className="text-[#2B2B2B] leading-relaxed mb-0">
-          嘿～不要逼我長大、不要逼我上班、不要逼我放棄創作，<br />這是一個為「開心」而生的圖文創作市集。<br />
-          我們相信，創作不該被逼，也相信，市集是快樂的，不是只有擺攤賣東西而已。<br />
-          來這裡的創作者，可以自在畫自己想畫的、說自己想說的。<br />
-          來逛市集的人，也可以放下包袱，開心地看展、翻書、聊天、亂笑。<br /><br />
-          「不要B我市集」以插畫、圖文創作為主軸，也可能會混一點點我們想嘗試的新玩法。<br />
-          這裡沒有一定要怎樣，只希望：<br />來的人開心，創作者也能在合作中笑著說真話。<br /><br />
-          我們是不要B我是說話直、但會陪你討論的那種主辦。<br />
-          我們很認真想辦一場大家都能「快樂做自己」的市集，<br /><br />你，要不要來玩？
+      <div className="flex flex-col sm:flex-row justify-between items-start gap-6 w-full">
+        <span className="text-[#2B2B2B] leading-relaxed mb-0 text-2xl w-full sm:text-base">
+          嘿～不要逼我長大、不要逼我上班、不要逼我放棄創作，<br className="sm:inline hidden" />
+          這是一個為「開心」而生的圖文創作市集。<br className="sm:inline hidden" />
+          我們相信，創作不該被逼，也相信，市集是快樂的，不是只有擺攤賣東西而已。<br className="sm:inline hidden" />
+          來這裡的創作者，可以自在畫自己想畫的、說自己想說的。<br className="sm:inline hidden" />
+          來逛市集的人，也可以放下包袱，開心地看展、翻書、聊天、亂笑。
+          <br className="inline" /><br className="inline" />
+          「不要B我市集」以插畫、圖文創作為主軸，也可能會混一點點我們想嘗試的新玩法。<br className="sm:inline hidden" />
+          這裡沒有一定要怎樣，只希望：<br />來的人開心，創作者也能在合作中笑著說真話。
+          <br className="inline" /><br className="inline" />
+          我們是不要B我，是說話直、但會陪你討論的那種主辦。<br className="sm:inline hidden" />
+          我們很認真想辦一場大家都能「快樂做自己」的市集，
+          <br className="inline" /><br className="inline" />你，要不要來玩？
         </span>
         <img src="/images/LOGO homepage.ver.png" alt="不要B我LOGO"
-        className="h-96 w-auto" />
+        className="w-96 max-w-xs m-auto sm:max-w-sm lg:max-w-lg h-auto object-contain" />
       </div>            
 
       {/* 本次市集 */}
-      <span className="text-[#1A1A1A] mt-20 mb-10 text-3xl font-bold">本次市集</span> 
-      <div className="bg-[#854D8E] rounded-lg flex w-full h-25 px-25 items-center">
+      <span className="text-[#1A1A1A] mt-20 mb-10 text-5xl font-bold sm:text-3xl">本次市集</span> 
+      <div className="bg-[#854D8E] rounded-lg flex w-full h-24 px-24 items-center">
         <span className="text-[#FFFFFF] text-2xl font-bold mr-auto">實體攤位時間：2025年7月18日(五) - 7月20日(日)</span>
         <span className="text-[#FFFFFF] text-2xl font-bold">＞更多資訊</span>
       </div>    
       <div className="h-1 sm:h-2 lg:h-3"></div>
-      <div className="bg-[#FFFFFF] rounded-lg flex w-full h-25 px-25 items-center">
+      <div className="bg-[#FFFFFF] rounded-lg flex w-full h-24 px-24 items-center">
         <span className="text-[#854D8E] text-2xl font-bold mr-auto">線上市集時間：2025年7月21日(一) - 8月21日(四)</span>
         <span className="text-[#854D8E] text-2xl font-bold">＞線上市集</span>
       </div>     
       <div className="h-2 sm:h-4 lg:h-8"></div>
-      <div className="bg-[#854D8E] rounded-lg flex w-35 h-15 items-center justify-center">
+      <div className="bg-[#854D8E] rounded-lg flex w-48 h-16 sm:w-36 sm:h-16 items-center justify-center">
         <span className="text-[#FFFFFF] text-2xl font-bold">攤位名單</span>
       </div>     
 
       {/* 交通指引 */}        
-      <span className="text-[#1A1A1A] mt-20 mb-5 text-3xl font-bold">交通指引</span> 
-      <p className="text-[#2B2B2B] leading-relaxed">
+      <span className="text-[#1A1A1A] mt-20 mb-5 text-5xl font-bold sm:text-3xl">交通指引</span> 
+      <p className="text-[#2B2B2B] leading-relaxed text-2xl sm:text-base">
         地址：106台北市大安區和平東路二段134號
       </p>
     </div>
     
-    <img src="/images/map.png" alt="地圖" className="w-full h-auto" />
+    <img src="/images/map.png" alt="地圖" className="w-full h-auto max-w-full sm:max-w-md md:max-w-lg lg:max-w-full mx-auto" />
 
     <div className="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-black bg-[#FFF9F0] text-[#2B2B2B] p-4">
       {/* MRT */}
@@ -111,7 +115,7 @@ function Dbm() {
             <li className="h-2"></li>
 
             <li className="text-[#FFF9F0] bg-[#854D8E] font-bold px-2 py-1 inline-block mb-1">
-            北二高
+              北二高
             </li>
             <li>木柵交流道下→辛亥路→右轉復興南路→右轉和平東路→國立臺北教育大學</li>
           </ul>
@@ -124,7 +128,6 @@ function Dbm() {
           <ul className="font-bold text-[#854D8E] text-6xl leading-none tracking-widest mb-4">
             U-BIKE
           </ul>
-
           <ul className="grid gap-2 w-full">
             <li className="justify-self-center text-[#FFF9F0] bg-[#854D8E] font-bold w-32 px-2 py-1">
               校門
@@ -138,7 +141,6 @@ function Dbm() {
           </ul>
         </div>
       </div>
-
 
     </div>
     </>

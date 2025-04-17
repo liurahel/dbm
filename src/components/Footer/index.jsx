@@ -9,17 +9,18 @@ export default function Footer() {
   return (
     <div>
       <footer className="footer text-[#FBCD5C] py-6">
-        <div className="flex w-6xl items-center">
+        <div className="flex w-sm sm:w-6xl items-center">
           {/* 描述區塊 */}
           <div className="footer-content">
-            <p className="space-x-2">
-              <FontAwesomeIcon icon={faPhone} />
-              <span>+886-2-1234-1234</span>
-            </p>
-            <p className="space-x-2">
-              <FontAwesomeIcon icon={faEnvelope} />
-              <span>s111219999@stu.ntue.edu.tw</span>
-            </p>
+            <div className="space-x-2">
+              <FontAwesomeIcon icon={faPhone} className="hover:rotate-45" />
+              <span className="text-lg sm:text-sm">+886-2-1234-1234</span>
+            </div>
+            <div className="h-1 sm:h-2"></div>
+            <div className="space-x-2">
+              <FontAwesomeIcon icon={faEnvelope} className="hover:rotate-45" />
+              <span className="text-lg sm:text-sm">s111219999@stu.ntue.edu.tw</span>
+            </div>
           </div>
 
           {/* 追蹤我們 */}
