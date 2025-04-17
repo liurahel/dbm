@@ -2,7 +2,7 @@ import { useState } from "react";
 import AddToBasket from "./AddToBasket"
 
 function ProductDetail({ product }) {
-  const [qty, setQty] = useState(product.countInStock > 0 ? 1 : 0);
+  const [qty, setQty] = useState(product.stock > 0 ? 1 : 0);
 
     return (
       <div className="flex flex-col items-center content w-full max-w-screen-lg mx-auto">

@@ -5,7 +5,7 @@ import SetColorMode from "../components/SetColorMode";
 export default function NavBar() {
   const navBarContent = [
     { to: "/products/category/tableware", label: "市集資訊" },
-    { to: "/products/category/cookware", label: "攤位名單" },
+    { to: "/shopper", label: "攤位名單" },
     { to: "/online-shop", label: "線上市集" },
     { to: "/products/category/lighting", label: "攤位報名" },
     { to: "/products/category/textile", label: "常見問題" },

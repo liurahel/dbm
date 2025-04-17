@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import OnlineShop from "./pages/OnlineShop"
 import Product from "./pages/Product";
 import store from "./redux/store";
+import Shopper from "./pages/Shopper"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="products">
             <Route path="id/:productId" element={<Product />} />
           </Route>
+          <Route path="/shopper" element={<Shopper />} />
         </Routes>
       </BrowserRouter>
     </Provider>
