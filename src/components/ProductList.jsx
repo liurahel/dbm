@@ -6,7 +6,7 @@ function ProductList({products}) {
    const discountProducts = products.filter(product => product.category === "優惠打折");
 
    return (
-      <div className="flex flex-col items-center content w-full max-w-screen-lg mx-auto">
+      <div className="flex flex-col items-center content w-full max-w-screen-lg mx-auto px-5">
          <div className="flex items-center gap-3 text-left self-start mb-4">
             <div className="w-4 h-7 bg-[#854D8E] rounded-tl-lg rounded-bl-lg"></div>
             <span className="text-[#1A1A1A] text-2xl font-medium">熱門商品</span>

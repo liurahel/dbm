@@ -16,11 +16,11 @@ function CartSummary() {
     <>
         <nav
             onClick={toggleModal}
-            className="leading-none inline-block absolute item-center right-8 md:right-16 cursor-pointer"
+            className="leading-none inline-block absolute item-center sm:right-14 right-16 cursor-pointer"
         >
             <div className="indicator">
                 {count > 0 && <span className="indicator-item badge badge-primary font-bold bg-[#854D8E] text-[#FFF9F0] transform scale-80">{count}</span>}
-                <ShoppingBasket strokeWidth={1.5} className="w-5 h-5 md:w-7 md:h-7 text-current group-hover:scale-105 transition-transform" />
+                <ShoppingBasket strokeWidth={1.5} className="sm:w-6 sm:h-6 w-8 h-8 text-current group-hover:scale-105 transition-transform" />
             </div>
         </nav>
         <BasketModal

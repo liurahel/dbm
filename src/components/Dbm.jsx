@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link, NavLink } from 'react-router';
 
 function Dbm() {
   return (
@@ -8,13 +8,13 @@ function Dbm() {
 
       {/* 給喜歡圖文創作的你 */}
 
-      <span className="text-[#1A1A1A] text-5xl font-bold sm:text-3xl">給喜歡圖文創作的你</span>
-      <div className="flex items-center gap-3 text-left self-start sm:mt-10 mt-20 mb-4">
-            <div className="w-6 h-9 sm:w-4 sm:h-7 bg-[#854D8E] rounded-tl-lg rounded-bl-lg"></div>
-            <span className="text-[#1A1A1A] text-4xl sm:text-2xl font-medium">開心，是我們所願。</span>
+      <span className="text-[#1A1A1A] text-4xl font-bold sm:text-3xl">給喜歡圖文創作的你</span>
+      <div className="flex items-center gap-3 text-left self-start sm:mt-10 mt-10 mb-4 px-5">
+            <div className="w-4 h-7 sm:w-4 sm:h-7 bg-[#854D8E] rounded-tl-lg rounded-bl-lg"></div>
+            <span className="text-[#1A1A1A] text-2xl sm:text-2xl font-medium">開心，是我們所願。</span>
       </div>
       <div className="flex flex-col sm:flex-row justify-between items-start gap-6 w-full">
-        <span className="text-[#2B2B2B] leading-relaxed mb-0 text-2xl w-full sm:text-base">
+        <span className="text-[#2B2B2B] leading-relaxed mb-0 px-5 text-lg w-full sm:text-base">
           嘿～不要逼我長大、不要逼我上班、不要逼我放棄創作，<br className="sm:inline hidden" />
           這是一個為「開心」而生的圖文創作市集。<br className="sm:inline hidden" />
           我們相信，創作不該被逼，也相信，市集是快樂的，不是只有擺攤賣東西而已。<br className="sm:inline hidden" />
@@ -33,24 +33,31 @@ function Dbm() {
       </div>            
 
       {/* 本次市集 */}
-      <span className="text-[#1A1A1A] mt-20 mb-10 text-5xl font-bold sm:text-3xl">本次市集</span> 
-      <div className="bg-[#854D8E] rounded-lg flex w-full h-24 px-24 items-center">
-        <span className="text-[#FFFFFF] text-2xl font-bold mr-auto">實體攤位時間：2025年7月18日(五) - 7月20日(日)</span>
-        <span className="text-[#FFFFFF] text-2xl font-bold">＞更多資訊</span>
+      <span className="text-[#1A1A1A] mt-10 mb-10 text-4xl font-bold sm:text-3xl">本次市集</span> 
+      <div className="bg-[#854D8E] rounded-lg flex flex-col sm:flex-row w-full h-32 sm:h-24 px-14 sm:px-24 items-center justify-center text-center">
+        <span className="text-[#FFFFFF] text-xl sm:text-2xl font-bold mr-auto">實體攤位時間<span className="sm:inline hidden">：</span><br className="sm:hidden inline" />
+        2025年7月18日(五) - 7月20日(日)</span>
+        <div className="h-3 sm:h-0"></div>
+        <span className="text-[#FFFFFF] text-xl sm:text-2xl font-bold">＞更多資訊</span>
       </div>    
       <div className="h-1 sm:h-2 lg:h-3"></div>
-      <div className="bg-[#FFFFFF] rounded-lg flex w-full h-24 px-24 items-center">
-        <span className="text-[#854D8E] text-2xl font-bold mr-auto">線上市集時間：2025年7月21日(一) - 8月21日(四)</span>
-        <span className="text-[#854D8E] text-2xl font-bold">＞線上市集</span>
+      <div className="bg-[#FFFFFF] rounded-lg flex flex-col sm:flex-row w-full h-32 sm:h-24 px-14 sm:px-24 items-center justify-center text-center">
+        <span className="text-[#854D8E] text-xl sm:text-2xl font-bold mr-auto">線上市集時間<span className="sm:inline hidden">：</span><br className="sm:hidden inline" />
+        2025年7月21日(一) - 8月21日(四)</span>
+        <div className="h-3 sm:h-0"></div>
+        <Link to="/online-shop"><span className="text-[#854D8E] text-xl sm:text-2xl font-bold">＞線上市集</span></Link>
       </div>     
       <div className="h-2 sm:h-4 lg:h-8"></div>
-      <div className="bg-[#854D8E] rounded-lg flex w-48 h-16 sm:w-36 sm:h-16 items-center justify-center">
-        <span className="text-[#FFFFFF] text-2xl font-bold">攤位名單</span>
-      </div>     
+
+      <Link to="/shopper">
+        <div className="bg-[#854D8E] rounded-lg flex w-48 h-14 sm:w-36 sm:h-16 items-center justify-center">
+          <span className="text-[#FFFFFF] text-xl sm:text-2xl font-bold">攤位名單</span>
+        </div>   
+      </Link>  
 
       {/* 交通指引 */}        
-      <span className="text-[#1A1A1A] mt-20 mb-5 text-5xl font-bold sm:text-3xl">交通指引</span> 
-      <p className="text-[#2B2B2B] leading-relaxed text-2xl sm:text-base">
+      <span className="text-[#1A1A1A] mt-20 mb-5 text-4xl font-bold sm:text-3xl">交通指引</span> 
+      <p className="text-[#2B2B2B] leading-relaxed text-lg sm:text-base">
         地址：106台北市大安區和平東路二段134號
       </p>
     </div>

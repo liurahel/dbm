@@ -54,7 +54,7 @@ export default function NavBar() {
         <input id="drawer-toggle" type="checkbox" className="drawer-toggle" checked={isOpen} readOnly />
         <HamMenu
           id="drawer-toggle" 
-          className="absolute top-4 left-4 z-50 bg-[#854D8E] w-10 h-10 "
+          className="absolute top-0 left-4 z-50 bg-[#854D8E] w-10 h-10 "
           onClick={() => setIsOpen(!isOpen)}
           isOpen={isOpen}
         />

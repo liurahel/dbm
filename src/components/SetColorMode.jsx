@@ -16,12 +16,12 @@ export default function SetColorMode() {
    }
 
    return (
-      <div onClick={toggleColor} className="absolute item-center right-2 md:right-6 cursor-pointer" >
+      <div onClick={toggleColor} className="absolute item-center sm:right-5 right-4 cursor-pointer" >
          {
             lightMode ? (
-               <Sun className="w-5 h-5 md:w-6 md:h-6 text-current group-hover:scale-105 transition-transform" />
+               <Sun className="sm:w-6 sm:h-6 w-8 h-8 text-current group-hover:scale-105 transition-transform" />
             ) : (
-               <Moon className="w-5 h-5 md:w-6 md:h-6 text-current group-hover:scale-105 transition-transform" /> 
+               <Moon className="sm:w-6 sm:h-6 w-8 h-8 text-current group-hover:scale-105 transition-transform" /> 
             )
          }
       </div>
