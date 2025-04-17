@@ -4,11 +4,9 @@ import SetColorMode from "../components/SetColorMode";
 
 export default function NavBar() {
   const navBarContent = [
-    { to: "/products/category/tableware", label: "市集資訊" },
-    { to: "/products/category/cookware", label: "攤位名單" },
+    { to: "/", label: "市集首頁" },
     { to: "/online-shop", label: "線上市集" },
-    { to: "/products/category/lighting", label: "攤位報名" },
-    { to: "/products/category/textile", label: "常見問題" },
+    { to: "/shopper", label: "攤位名單" },
   ];  
 
   return (
@@ -36,9 +34,9 @@ export default function NavBar() {
             {/* 右側購物車 */}
             <div className="flex items-center text-[#854D8E]">
               <CartSummary />
-              <div className="flex items-center text-[#FBCD5C]">
-                <SetColorMode/>
-              </div>
+            </div>
+            <div className="flex items-center text-[#FBCD5C]">
+              <SetColorMode/>
             </div>
         </div>
     </div>
