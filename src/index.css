@@ -12,9 +12,19 @@
 
 html,
 body {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   background-color: #FFF9F0;
+}
+@media (min-width: 640px) {
+  html, body {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  html, body {
+    font-size: 20px;
+  }
 }
 
 .main-layout {
@@ -39,9 +49,19 @@ body {
   grid-area: content;
   background-color: #FFF9F0;
   color: #2B2B2B;
-  max-width: calc(100% - 360px);
-  margin-top: 80px;
-  margin-bottom: 160px;
+  max-width: 100%;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+@media (min-width: 640px) {
+  .content {
+    max-width: calc(100% - 240px);
+  }
+}
+@media (min-width: 1024px) {
+  .content {
+    max-width: calc(100% - 360px);
+  }
 }
 
 .footer {

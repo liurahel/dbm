@@ -13,7 +13,7 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const NavBarContent = () => (
-    <div className="flex flex-wrap gap-4 justify-center mt-2">
+    <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center mt-2">
       {navBarContent.map(({ to, label }) => (
         <NavLink
         key={to}
@@ -22,7 +22,7 @@ export default function NavBar() {
         className={({ isActive }) =>
             `mx-6 text-base font-semibold transition-all duration-500 ease-in-out ${
             isActive ? "opacity-100 font-normal" : "opacity-70"
-            } hover:opacity-100 hover:[text-shadow:0px_0px_30px_white`
+            } hover:opacity-100 hhover:shadow-lg`
         }
         >
         {label}
@@ -50,7 +50,7 @@ export default function NavBar() {
     </div>
 
       {/* 手機版 Drawer */}
-      <div className="drawer md:hidden fixed top-8 z-50">
+      <div className="drawer sm:hidden fixed top-8 z-50">
         <input id="drawer-toggle" type="checkbox" className="drawer-toggle" checked={isOpen} readOnly />
         <HamMenu
           id="drawer-toggle" 
@@ -69,11 +69,11 @@ export default function NavBar() {
             </Link>
           </div>
         </div>
-        <div className="fixed top-4 right-4 flex items-center space-x-4 z-50 justify-center">
-          <div className="w-10 h-10 flex items-center justify-center text-[#FBCD5C]">
+        <div className="flex space-x-4 items-center">
+          <div className="sm:flex w-10 h-10 justify-center items-center text-[#FBCD5C]">
             <CartSummary />
           </div>
-          <div className="w-10 h-10 flex items-center justify-center text-[#FBCD5C]">
+          <div className="sm:flex w-10 h-10 justify-center items-center text-[#FBCD5C]">
             <SetColorMode />
           </div>
         </div>
