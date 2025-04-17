@@ -6,7 +6,8 @@
        "summary": "可以當鑰匙圈（以右手超人吊飾為例\n 扣環的開法（以狗狗雲吊飾為例）找到接縫處，右手往右上，左手往左下，同時向左右拉開\n 尺寸：扣環直徑 4.5 cm，吊飾本身約 13.5x3.5 cm\n材質：帆布（有點米白，不是純白)\n 產地：台灣",
        "price": 280,
        "stock": 10,
-       "cover": "/images/101.png"
+       "cover": "/images/store/101.png",
+       "category": "最新上架"
    },
    {
        "id": 2,
@@ -15,7 +16,8 @@
        "summary": "把超人掛在包包上，和超人一起去好多地方～\n 也可以當鑰匙圈（以右手超人吊飾為例\n 扣環的開法（以狗狗雲吊飾為例）找到接縫處，右手往右上，左手往左下，同時向左右拉開\n 尺寸：扣環直徑 4.5 cm，吊飾本身約 13.5x3.5 cm\n材質：帆布（有點米白，不是純白)\n 產地：台灣",
        "price": 280,
        "stock": 0,
-       "cover": "/images/103.png"
+       "cover": "/images/store/103.png",
+       "category": "最新上架"
    },
    {
        "id": 3,
@@ -24,7 +26,8 @@
        "summary": "抱抱鬼乖乖地抱著右手超人\n 也可以當鑰匙圈（以右手超人吊飾為例\n 扣環的開法（以狗狗雲吊飾為例）找到接縫處，右手往右上，左手往左下，同時向左右拉開\n 尺寸：扣環直徑 4.5 cm，吊飾本身約 13.5x3.5 cm\n材質：帆布（有點米白，不是純白)\n 產地：台灣",
        "price": 280,
        "stock": 5,
-       "cover": "/images/102.png"
+       "cover": "/images/store/102.png",
+       "category": "最新上架"
    },
    {
        "id": 4,
@@ -33,7 +36,8 @@
        "summary": "是透明有割型的，底層有上白墨，貼在顏色深的地方也看得到～\n 尺寸：整張 9x13 公分，單個圖案高約 3 公分\n 材質：透明防水貼紙\n 產地：台灣",
        "price": 80,
        "stock": 7,
-       "cover": "/images/104.png"
+       "cover": "/images/store/104.png",
+       "category": "最新上架"
    },
    {
        "id": 5,
@@ -42,7 +46,8 @@
        "summary": "是透明有割型的，底層有上白墨，貼在顏色深的地方也看得到～\n 尺寸：整張 9x13 公分，單個圖案高約 3 公分\n 材質：透明防水貼紙\n 產地：台灣",
        "price": 80,
        "stock": 10,
-       "cover": "/images/105.png"
+       "cover": "/images/store/105.png",
+       "category": "最新上架"
    },
    {
        "id": 6,
@@ -51,6 +56,68 @@
        "summary": "是透明有割型的，底層有上白墨，貼在顏色深的地方也看得到～\n 尺寸：整張 9x13 公分，單個圖案高約 3 公分\n 材質：透明防水貼紙\n 產地：台灣",
        "price": 80,
        "stock": 6,
-       "cover": "/images/106.png"
+       "cover": "/images/store/106.png",
+       "category": "最新上架"
+   },
+   {
+       "id": 7,
+       "title": "手帳好朋友~ 可愛的小日子 月份貼紙",
+       "author": "Macaron TOE 馬卡龍腳趾",
+       "summary": "內容物：月份貼紙 1 入\n 細節：10 x 13 cm\n 材質：模造紙\n 每個月貼紙大小約 4.3 x 1.3 cm",
+       "price": 60,
+       "stock": 12,
+       "cover": "/images/store/107.png",
+       "category": "優惠打折"
+   },
+   {
+       "id": 8,
+       "title": "手帳好朋友~ 可愛的小日子 月份索引貼紙",
+       "author": "Macaron TOE 馬卡龍腳趾",
+       "summary": "是透明有割型的，底層有上白墨，貼在顏色深的地方也看得到～\n 尺寸：整張 9x13 公分，單個圖案高約 3 公分\n 材質：透明防水貼紙\n 產地：台灣",
+       "price": 60,
+       "stock": 15,
+       "cover": "/images/store/108.png",
+       "category": "優惠打折"
+   },
+   {
+       "id": 9,
+       "title": "月份貼紙 | 貼紙包",
+       "author": "Macaron TOE 馬卡龍腳趾",
+       "summary": "內容物：貼紙包 1入\n 大小約 5 cm 12個月份\n 防水貼紙",
+       "price": 50,
+       "stock": 8,
+       "cover": "/images/store/109.png",
+       "category": "優惠打折"
+   },
+   {
+       "id": 10,
+       "title": "白怪獸與綠怪獸 厚厚和紙貼紙",
+       "author": "Macaron TOE 馬卡龍腳趾",
+       "summary": "內容物：\n 和紙貼紙 1入\n 細節：\n 10 x 13 cm\n 內有多張大小不一貼紙\n 和紙材質",
+       "price": 60,
+       "stock": 6,
+       "cover": "/images/store/110.png",
+       "category": "優惠打折"
+   },
+   {
+       "id": 11,
+       "title": "一杯咖啡的時間 厚厚和紙貼紙",
+       "author": "Macaron TOE 馬卡龍腳趾",
+       "summary": "內容物：\n 和紙貼紙 1入\n 細節：\n 10 x 13 cm\n 內有多張大小不一貼紙\n 和紙材質",
+       "price": 60,
+       "stock": 9,
+       "cover": "/images/store/111.png",
+       "category": "優惠打折"
+   },
+   {
+       "id": 12,
+       "title": "侏羅紀公園 月份和紙貼紙",
+       "author": "Macaron TOE 馬卡龍腳趾",
+       "summary": "內容物：\n 和紙貼紙 1入\n 細節：\n 10 x 13 cm\n 內有多張大小不一貼紙\n 和紙材質 有一點點厚度 表面有和紙紋路",
+       "price": 60,
+       "stock": 6,
+       "cover": "/images/store/112.png",
+       "category": "優惠打折"
    }
+   
  ]

@@ -33,7 +33,7 @@ export default function AddToBasket({ product, qty }) {
             <div className="toast toast-end">
               <div className="alert bg-[#FFF9F0] text-[#2B2B2B]">
                 <span>
-                  {qty} {qty > 1 ? "個" : "piece"} {product.title} {qty > 1 ? "已" : "has"} 加到購物車
+                  {qty} {qty > 1 ? "個" : ""} {product.title} {qty > 1 ? "已" : ""} 加到購物車
                 </span>
               </div>
             </div>

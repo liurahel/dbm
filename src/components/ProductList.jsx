@@ -1,6 +1,10 @@
 import ProductItem from './ProductItem'
 
 function ProductList({products}) {
+   const hotProducts = products.filter(product => product.category === "熱門商品");
+   const newProducts = products.filter(product => product.category === "最新上架");
+   const discountProducts = products.filter(product => product.category === "優惠打折");
+
    return (
       <div className="flex flex-col items-center content w-full max-w-screen-lg mx-auto">
          <img src="/images/視覺圖_light.svg" alt="不要B我市集" className="w-2xl h-auto mx-auto"/>
@@ -11,7 +15,7 @@ function ProductList({products}) {
             <h2 className="text-[#1A1A1A] text-2xl font-bold">熱門商品</h2>
          </div>
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 justify-center gap-4 mx-auto">
-            {products.map((product) => (
+            {hotProducts.map(product => (
                <ProductItem key={product.id} product={product} />
             ))}
          </div>
@@ -21,7 +25,7 @@ function ProductList({products}) {
             <h2 className="text-[#1A1A1A] text-2xl font-bold">最新上架</h2>
          </div>
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 justify-center gap-4 mx-auto">
-            {products.map((product) => (
+            {newProducts.map(product => (
                <ProductItem key={product.id} product={product} />
             ))}
          </div>
@@ -31,7 +35,7 @@ function ProductList({products}) {
             <h2 className="text-[#1A1A1A] text-2xl font-bold">優惠打折</h2>
          </div>
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 justify-center gap-4 mx-auto">
-            {products.map((product) => (
+            {discountProducts.map(product => (
                <ProductItem key={product.id} product={product} />
             ))}
          </div>
