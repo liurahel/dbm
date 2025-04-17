@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet-async';
 
 function Home() {
     return (
-      <div className="container mx-auto main-layout bg-[#FFF9F0] min-h-screen flex flex-col items-center">
+      <div className="container mx-auto main-layout bg-[#FFF9F0] min-h-screen flex flex-col items-center ">
         <Helmet>
           <title>不要B我市集 | 首頁</title>
         </Helmet>
