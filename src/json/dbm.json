@@ -118,6 +118,66 @@
        "stock": 6,
        "cover": "/images/store/112.png",
        "category": "優惠打折"
+   },
+   {
+       "id": 13,
+       "title": "我想躲起來一下（隨書驚喜：陪著你暖暖小卡組）",
+       "author": "LuckyLuLu",
+       "summary": "新生代明亮系插畫家LuckyLuLu全新青春繪文集\n ＼隨書驚喜！陪著你暖暖小卡組／\n 隨書附贈LuLu全新創作、親筆創作圖文小卡五篇，可作為書籤、祝福卡、手帳素材。\n 用紙：萊妮紙216磅，尺寸：5.4*9cm",
+       "price": 360,
+       "stock": 10,
+       "cover": "/images/store/113.webp",
+       "category": "熱門商品"
+   },
+   {
+       "id": 14,
+       "title": "HaoO 懶散兔啾先生聯名 35W 氮化鎵PD+QC充電器 | 2孔快充",
+       "author": "懶散兔啾先生",
+       "summary": "35W雙孔超輕巧氮化鎵電源供應器 - 期間限定款 x 懶散兔＆啾先生 聯名！\n 支援QC/PD雙孔快充，極小極輕設計，輕巧方便攜帶！快來蒐藏！",
+       "price": 580,
+       "stock": 6,
+       "cover": "/images/store/114.png",
+       "category": "熱門商品"
+   },
+   {
+       "id": 15,
+       "title": "蛋塔熊妹｜小熊虎法蘭絨地毯",
+       "author": "EggyBear 蛋塔熊妹",
+       "summary": "法蘭絨材質的柔和觸感，讓你每天擁有好心情😚\n（背面是有止滑顆粒的～）",
+       "price": 400,
+       "stock": 4,
+       "cover": "/images/store/115.png",
+       "category": "熱門商品"
+   },
+   {
+       "id": 16,
+       "title": "不正經日常：鬼門圖文全新未公開首部創作",
+       "author": "鬼門圖文",
+       "summary": "人生苦短，踏上了何必要跪著走完？\n 超難抉擇二選一，砥礪坎坷未來路！\n 勵志靜思語，洋溢著暖暖的溫腥！\n 微無聊的小日常，鬼門圖文精準捕捉一切不正經\n 讓你煩惱Let it go～笑到肚破腸流！",
+       "price": 260,
+       "stock": 7,
+       "cover": "/images/store/116.webp",
+       "category": "熱門商品"
+   },
+   {
+       "id": 17,
+       "title": "1G珍妮 2025桌曆 | 附贈年曆海報、貼紙",
+       "author": "1G",
+       "summary": "組合內容：桌曆x1、貼紙x1、年曆海報）x1\n 每週一為一週的開始日\n 參考 2023人事行政局國定假日放假攻略\n 農曆 初一十五特別節日標示 (方便拜拜吃素)\n 末兩張有功能頁「 休假中 」「 馬上回來 」",
+       "price": 390,
+       "stock": 5,
+       "cover": "/images/store/117.png",
+       "category": "熱門商品"
+   },
+   {
+       "id": 18,
+       "title": "小G與小GO | 刺繡棒球帽",
+       "author": "1G",
+       "summary": "看～我們有一樣的帽子（指）\n 你一頂、我也一頂\n 小G小GO我們倆已經自備好ㄌ",
+       "price": 680,
+       "stock": 6,
+       "cover": "/images/store/118.png",
+       "category": "熱門商品"
    }
    
  ]

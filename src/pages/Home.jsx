@@ -9,7 +9,7 @@ function Home() {
         <div className="flex flex-col items-center">
         <Navbar />
         <img
-        src="/images/視覺圖_light.svg"
+        src="/images/不要B我市集 (亮).png"
         alt="不要B我市集"
         className="w-full h-auto"
         />
