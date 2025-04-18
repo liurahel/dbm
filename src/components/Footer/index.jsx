@@ -8,8 +8,8 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 export default function Footer() {
   return (
     <div>
-      <footer className="footer footer-bg footer-text py-6 w-90%">
-        <div className="flex flex-col gap-4 sm:flex-row w-sm sm:w-6xl items-center">
+      <footer className="footer footer-bg footer-text py-6 w-full">
+        <div className="max-w-6xl mx-auto px-4 flex flex-col sm:gap-200  sm:flex-row items-center justify-betweenr">
           {/* 描述區塊 */}
           <div className="sm:mr-auto">
             <div className="space-x-2">
@@ -41,7 +41,7 @@ export default function Footer() {
           {/* 版權聲明 */}
           <div className="w-full px-4">
             <div className="max-w-5xl mx-auto text-center">
-              <hr className="my-2 mt-5 w-xs sm:w-2xl sm:my-4 icon-text w-[840px] mx-auto hover:text-[#086776]" />
+              <hr className="my-2 mt-5 w-xs sm:w-2xl sm:my-4 icon-text mx-auto hover:text-[#086776]" />
               <span className="text-xs sm:text-sm group">
                 ©不要
                 <span className="inline-block group-hover:scale-125 group-hover:tracking-widest transition-transform duration-200">B</span>
