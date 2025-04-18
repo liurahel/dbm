@@ -29,7 +29,8 @@ function Dbm() {
           <br className="inline" /><br className="inline" />你，要不要來玩？
         </span>
         <img src="/images/LOGO homepage.ver.png" alt="不要B我LOGO"
-        className="w-96 max-w-xs m-auto sm:max-w-sm lg:max-w-lg h-auto object-contain" />
+        className="w-96 max-w-xs m-auto sm:max-w-sm lg:max-w-lg h-auto object-contain cursor-pointer
+        transition-transform duration-300 hover:animate-spin" />
       </div>            
 
       {/* 本次市集 */}
@@ -50,11 +51,11 @@ function Dbm() {
       <div className="h-2 sm:h-4 lg:h-8"></div>
 
       <Link to="/shopper">
-        <div className="icon-bg rounded-lg flex w-48 h-14 sm:w-36 sm:h-16 items-center justify-center">
-          <span className="just-text text-xl sm:text-2xl font-bold">攤位名單</span>
-        {/*</div><div className="bg-[#854D8E] hover:bg-[#9b66a4] transition-all duration-300 rounded-lg flex w-48 h-14 sm:w-36 sm:h-16 items-center justify-center 
+        {/*<div className="icon-bg rounded-lg flex w-48 h-14 sm:w-36 sm:h-16 items-center justify-center">
+          <span className="just-text text-xl sm:text-2xl font-bold">攤位名單</span></div>*/}
+        <div className="bg-[#854D8E] hover:bg-[#9b66a4] transition-all duration-300 rounded-lg flex w-48 h-14 sm:w-36 sm:h-16 items-center justify-center 
         cursor-pointer shadow-md hover:shadow-lg scale-100 hover:scale-105">
-          <span className="text-[#FFFFFF] text-xl sm:text-2xl font-bold hover:text-[#FBCD5C] transition">攤位名單</span>*/}
+          <span className="text-[#FFFFFF] text-xl sm:text-2xl font-bold hover:text-[#FBCD5C] transition">攤位名單</span>
         </div>   
       </Link>
 
