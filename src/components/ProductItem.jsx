@@ -9,14 +9,14 @@ function ProductItem({ product }) {
             <img className="w-full max-w-[150px] sm:max-w-[200px] lg:max-w-[250px] aspect-square object-cover mx-auto rounded-md" src={product.cover} alt={product.title} />
             </Link>
          </div>
-         <div className="text-[#1A1A1A]">
+         <div className="title-text">
             <h5 className="mt-2 truncate w-full overflow-hidden whitespace-nowrap font-semibold text-sm sm:text-base lg:text-lg">
                {product.title}
             </h5>
-            <h6 className="text-[#686868] text-sm sm:text-base lg:text-lg">
+            <h6 className="text-sm sm:text-base lg:text-lg stitle-text">
                {product.author}
             </h6>
-            <div className="flex justify-between flex-wrap">
+            <div className="flex justify-between flex-wrap title-text">
                <span className="items-center leading-none text-lg mt-2">
                   NT$ {product.price}
                </span>

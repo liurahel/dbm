@@ -19,18 +19,18 @@ export default function BasketModal({ isOpen, toggleModal }) {
          {/* DaisyUI Modal */}
          {isOpen && (
             <div className="modal modal-open">
-               <div className="modal-box max-w-md">
-                  <h3 className="font-thin text-[2rem] mb-4 text-left text-[#2B2B2B]">購物車</h3>
+               <div className="modal-box max-w-md content-bf content-text">
+                  <h3 className="font-thin text-[2rem] mb-4 text-left content-text">購物車</h3>
                   {/* Cart Items */}
                   {cartItems.length === 0 ? (
-                     <div className="text-center text-[#686868]">-目前無商品-</div>
+                     <div className="text-center stitle-text">-目前無商品-</div>
                   ) : (
                      cartItems.map(item => (
-                        <li key={item.id} className="flex justify-between items-center pb-4 mb-4 border-b border-[#2B2B2B]">
+                        <li key={item.id} className="flex justify-between items-center pb-4 mb-4 border-b">
                            <Link to={`/products/id/${item.id}?qtyFromBasket=${item.qty}`} onClick={handleCancel}>
                               <img className="max-w-16 max-h-16 flex-1 cursor-pointer" src={item.image} alt={item.name} />
                            </Link>
-                           <div className="ml-4 flex-8 w-48 text-left title text-[#2B2B2B]">
+                           <div className="ml-4 flex-8 w-48 text-left title content-text">
                               <div className="font-bold mb-1">{item.name}</div>
                               <div className="flex items-center space-x-2">
                                  <span>數量</span>
@@ -54,7 +54,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
                                  </select>
                               </div>
                            </div>
-                           <div className="text-right text-[#2B2B2B]">
+                           <div className="text-right content-text">
                               <div className="font-bold text-base">NT$ {item.price * item.qty}</div>
                               <div
                                  className="text-xl opacity-60 cursor-pointer"
@@ -68,17 +68,17 @@ export default function BasketModal({ isOpen, toggleModal }) {
                   )}
 
                   {/* Total */}
-                  <div className="flex justify-between items-center mb-2 text-[#1A1A1A]">
+                  <div className="flex justify-between items-center mb-2 title-text">
                      <div className="font-semibold">總價</div>
                      <div className="font-bold text-right">NT$ {getTotalPrice()}</div>
                   </div>
 
                   {/* Checkout Button */}
                   <button
-                     className="btn btn-primary w-full text-base font-light py-3 flex justify-center items-center bg-[#854D8E] rounded-lg hover:bg-[#743D7A] transition-al"
+                     className="btn btn-primary w-full text-base font-light py-3 flex justify-center items-center icon-bg rounded-lg hover:bg-[#743D7A] transition-al"
                   >
-                     <ShoppingBasket strokeWidth={1} className="w-5 h-5 md:w-6 md:h-6 text-[#FFF9F0] group-hover:scale-105 transition-transform" />
-                     <span className="font-thin text-[#FFF9F0]">結帳</span>
+                     <ShoppingBasket strokeWidth={1} className="w-5 h-5 md:w-6 md:h-6 iccon-text group-hover:scale-105 transition-transform" />
+                     <span className="font-thin iccon-text">結帳</span>
                   </button>
 
                   {/* Close button */}

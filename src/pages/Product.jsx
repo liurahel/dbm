@@ -11,7 +11,7 @@ function Product() {
      (x) => x.id === Number(productId))
 
    return (
-     <div className="container mx-auto main-layout bg-[#FFF9F0]">
+     <div className="container mx-auto main-layout content-bf">
          <Helmet>
             <title>不要B我市集 | 線上市集</title>
          </Helmet>

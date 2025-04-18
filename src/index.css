@@ -1,13 +1,141 @@
 @import "tailwindcss";
 @source "./pages";
 @source "./components";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light, dark;
+}
+  
 @plugin "daisyui/theme" {
-  name: "mytheme";
-  default: true; /* set as default */
-  prefersdark: false; /* set as default dark mode (prefers-color-scheme:dark) */
-  color-scheme: light; /* color of browser-provided UI */
-  --color-primary: #FFF9F0;
+  name: "dark";
+  --color-primary: #FBCD5C;
+}
+  
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #854D8E;
+}
+  
+[data-theme="light"] {
+  .header-bg {
+    background-color:#854D8E;
+  }
+  .header-text {
+    color:#FBCD5C
+  }
+  .nav-bg {
+    background-color: #FFF9F0;
+  }
+  .nav-text {
+    color: #854D8E;
+  }
+  .content-bf {
+    background-color: #FFF9F0;
+  }
+  .content-text {
+    color: #2B2B2B;
+  }
+  .title-text {
+    color: #1A1A1A;
+  }
+  .stitle-text {
+    color: #686868;
+  }
+  .footer-bg {
+    background-color: #854D8E;
+  }
+  .footer-text {
+    color:#FBCD5C;
+  }
+  .drawer-bg {
+    background-color: #FBCD5C;
+  }
+  .drawer-text {
+    color: #854D8E;
+  }
+  .icon-text {
+    color: #FBCD5C;
+  }
+  .icon-bg {
+    background-color: #854D8E;
+  }
+  .iccon-text {
+    color: #FFF9F0;
+  }
+  .iicon-bg {
+    background-color: #FBCD5C;
+  }
+  .white-bg {
+    background-color: #FFFFFF;
+  }
+  .just-text {
+    color: #FFFFFF;
+  }
+}
+  
+[data-theme="dark"] {
+  .header-bg {
+    background-color:#FBCD5C;
+  }
+  .header-text {
+    color:#854D8E;
+  }
+  .nav-bg {
+    background-color: #1a1a1a;
+  }
+  .nav-text {
+    color: #FBCD5C;
+  }
+  .content-bf {
+    background-color: #1a1a1a;
+  }
+  .content-text {
+    color: #E0E0E0;
+  }
+  .title-text {
+    color: #FFFFFF;
+  }
+  .stitle-text {
+    color: #E0E0E0;
+  }
+  .footer-bg {
+    background-color: #FBCD5C;
+  }
+  .footer-text {
+    color:#854D8E
+  }
+  .drawer-bg {
+    background-color: #854D8E;
+  }
+  .drawer-text {
+    color: #FBCD5C;
+  }
+  .icon-text {
+    color: #854D8E;
+  }
+  .icon-bg {
+    background-color: #FBCD5C;
+  }
+  .iccon-text {
+    color: #1a1a1a;
+  }
+  .iicon-bg {
+    background-color: #854D8E;
+  }
+  .white-bg {
+    background-color: #000000;
+  }
+  .just-text {
+    color: #000000;
+  }
+}
+
+[data-theme="light"] .theme-bg {
+  background-image: url("/images/不要B我市集 (亮).png");
+}
+
+[data-theme="dark"] .theme-bg {
+  background-image: url("/images/不要B我市集 (暗).png");
 }
 
 html,
@@ -41,14 +169,10 @@ body {
 
 .header {
   grid-area: header;
-  background-color: #854D8E;
-  color: #FBCD5C;
 }
 
 .content {
   grid-area: content;
-  background-color: #FFF9F0;
-  color: #2B2B2B;
   max-width: 100%;
   margin-top: 40px;
   margin-bottom: 80px;
@@ -66,6 +190,4 @@ body {
 
 .footer {
   grid-area: footer;
-  background-color: #854D8E;
-  color: #FBCD5C;
 }

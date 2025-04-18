@@ -3,7 +3,7 @@ import React from 'react';
 function ShopperList() {
    return (
       <div className="flex flex-col items-center content w-full max-w-screen-lg mx-auto">
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 justify-center gap-4 mx-auto w-full">
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 justify-center gap-4 mx-auto w-full content-text">
 
         </div>
          <img src="/images/不要B我市集 (亮).png" alt="不要B我市集" className="w-full max-w-[400px] sm:max-w-[600px] lg:max-w-[800px] h-auto mx-auto mt-25 mb-4"/>

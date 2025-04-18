@@ -8,7 +8,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 export default function Footer() {
   return (
     <div>
-      <footer className="footer text-[#FBCD5C] py-6 w-90%">
+      <footer className="footer footer-bg footer-text py-6 w-90%">
         <div className="flex flex-col gap-4 sm:flex-row w-sm sm:w-6xl items-center">
           {/* 描述區塊 */}
           <div className="sm:mr-auto">
@@ -27,10 +27,10 @@ export default function Footer() {
           <div className="footer-followUs">
             <div className="flex space-x-6 text-3xl">
              
-              <FontAwesomeIcon icon={faFacebook} className="text-[#FBCD5C] hover:text-[#FFF9F0] 
+              <FontAwesomeIcon icon={faFacebook} className=" hover:text-[#FFF9F0] 
               transition-all duration-200 transform hover:scale-125" />
              
-              <FontAwesomeIcon icon={faInstagram} className="text-[#FBCD5C] hover:text-[#FFF9F0] 
+              <FontAwesomeIcon icon={faInstagram} className=" hover:text-[#FFF9F0] 
               transition-all duration-200 transform hover:scale-125" />
             </div>
           </div>

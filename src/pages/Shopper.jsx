@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet-async';
 
 function Shopper() {
     return (
-      <div className="container mx-auto main-layout bg-[#FFF9F0] min-h-screen">
+      <div className="container mx-auto main-layout content-bf min-h-screen">
         <Helmet>
             <title>不要B我市集 | 攤位名單</title>
         </Helmet>

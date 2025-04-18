@@ -2,26 +2,26 @@ export default function HamMenu({ onClick, isOpen, className }) {
     return (
        <span
           onClick={onClick}
-          className={`absolute z-10 bg-[#854D8E] w-10 h-10 rounded-2xl opacity-70 left-4 top-0 hover:opacity-100 md:hidden flex items-center justify-center ${className}`}
+          className={`absolute z-10 icon-bg w-10 h-10 rounded-xl opacity-70 left-4 top-0 hover:opacity-100 md:hidden flex items-center justify-center ${className}`}
        >
-          <span className="w-8 h-6 flex flex-col justify-between hover:cursor-pointer">
+          <span className="w-8 h-6 flex flex-col justify-between hover:cursor-pointer icon-bg">
              {/* 第一條線 */}
              <span
-                className={`bg-[#FBCD5C] h-[3px] transition-all duration-400 w-full origin-center ${isOpen
+                className={`iicon-bg h-[3px] transition-all duration-400 w-full origin-center ${isOpen
                    ? "opacity-0"
                    : "translate-y-[6px] rotate-[-4deg]" /* 修正旋轉前的位置 */
                    }`}
              ></span>
              {/* 第二條線 */}
              <span
-                className={`bg-[#FBCD5C] h-[3px] w-full transition-all duration-400 origin-center ${isOpen
+                className={`iicon-bg h-[3px] w-full transition-all duration-400 origin-center ${isOpen
                    ? "rotate-45 w-8 translate-y-[5px]" /* 調整旋轉軸心 */
                    : "translate-y-[3px] rotate-[2deg]"
                    }`}
              ></span>
              {/* 第三條線 */}
              <span
-                className={`bg-[#FBCD5C] h-[3px] w-full transition-all duration-400 origin-center ${isOpen
+                className={`iicon-bg h-[3px] w-full transition-all duration-400 origin-center ${isOpen
                    ? "rotate-[-45deg] w-8 -translate-y-[6px]" /* 修正旋轉軸心 */
                    : "rotate-[-2deg]"
                    }`}
