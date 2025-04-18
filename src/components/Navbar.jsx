@@ -37,7 +37,8 @@ export default function NavBar() {
     <div className="hidden md:flex justify-aroundflex items-center h-20 w-6xl fixed top-8 z-50 px-4 py-4 shadow-md rounded-[20px] nav-bg nav-text">
       <div className="flex items-center justify-center max-w-6xl mx-auto">
         <Link to="/">
-        <img src="/images/企劃書.png" alt="不要B我LOGO" className="w-30 h-auto absolute item-center left-2 md:left-6 top-1.5 cursor-pointer" /></Link>
+        <img src="/images/企劃書.png" alt="不要B我LOGO" className="w-30 h-auto absolute item-center left-2 md:left-6 top-1.5 cursor-pointer
+        transition-transform duration-300 hover:animate-spin" /></Link>
         <NavBarContent />
         {/* 右側購物車 */}
           <div className="flex items-center">

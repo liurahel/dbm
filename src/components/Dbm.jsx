@@ -39,6 +39,7 @@ function Dbm() {
         2025年7月18日(五) - 7月20日(日)</span>
         <div className="h-3 sm:h-0"></div>
         <span className="just-text text-xl sm:text-2xl font-bold">＞更多資訊</span>
+        <span className="text-[#FFFFFF] text-xl sm:text-2xl font-bold hover:underline hover:underline-offset-4 transition-all duration-300">＞更多資訊</span>
       </div>    
       <div className="h-1 sm:h-2 lg:h-3"></div>
       <div className="white-bg rounded-lg flex flex-col sm:flex-row w-full h-32 sm:h-24 px-14 sm:px-24 items-center justify-center text-center">
@@ -46,14 +47,18 @@ function Dbm() {
         2025年7月21日(一) - 8月21日(四)</span>
         <div className="h-3 sm:h-0"></div>
         <Link to="/online-shop"><span className="drawer-text text-xl sm:text-2xl font-bold">＞線上市集</span></Link>
+        <Link to="/online-shop"><span className="text-[#854D8E] text-xl sm:text-2xl font-bold hover:underline hover:underline-offset-4 transition-all duration-300">＞線上市集</span></Link>
       </div>     
       <div className="h-2 sm:h-4 lg:h-8"></div>
 
       <Link to="/shopper">
         <div className="icon-bg rounded-lg flex w-48 h-14 sm:w-36 sm:h-16 items-center justify-center">
           <span className="just-text text-xl sm:text-2xl font-bold">攤位名單</span>
+        {/*</div><div className="bg-[#854D8E] hover:bg-[#9b66a4] transition-all duration-300 rounded-lg flex w-48 h-14 sm:w-36 sm:h-16 items-center justify-center 
+        cursor-pointer shadow-md hover:shadow-lg scale-100 hover:scale-105">
+          <span className="text-[#FFFFFF] text-xl sm:text-2xl font-bold hover:text-[#FBCD5C] transition">攤位名單</span>*/}
         </div>   
-      </Link>  
+      </Link>
 
       {/* 交通指引 */}        
       <span className="title-tex mt-20 mb-5 text-4xl font-bold sm:text-3xl">交通指引</span> 
@@ -137,7 +142,9 @@ function Dbm() {
             U-BIKE
           </ul>
           <ul className="grid gap-2 w-full">
-            <li className="justify-self-center iccon-text icon-bg font-bold w-32 px-2 py-1">
+            <li className="justify-self-center iccon-text icon-bg font-bold w-32 px-2 py-1"></li></ul>
+          <ul className="grid gap-2 w-full ">
+            <li className="justify-self-center text-[#FFF9F0] bg-[#854D8E] font-bold w-32 px-2 py-1">
               校門
             </li>
             <li className="justify-self-start iccon-text icon-bg font-bold w-32 px-2 py-1">
