@@ -39,14 +39,17 @@ export default function Footer() {
         </div>
 
           {/* 版權聲明 */}
-          <div className="footer-copyRight">
-            <hr className="my-2 mt-5 w-xs sm:w-2xl sm:my-4 hover:text-[#086776]" />
-            <span className="text-xs sm:text-sm group">
-              ©不要
-              <span className="inline-block group-hover:scale-145 group-hover:tracking-widest transition-transform duration-200">B</span>
-              我市集
-            </span>
+          <div className="w-full px-4">
+            <div className="max-w-5xl mx-auto text-center">
+              <hr className="my-2 mt-5 w-xs sm:w-2xl sm:my-4 icon-text w-[840px] mx-auto hover:text-[#086776]" />
+              <span className="text-xs sm:text-sm group">
+                ©不要
+                <span className="inline-block group-hover:scale-125 group-hover:tracking-widest transition-transform duration-200">B</span>
+                我市集
+              </span>
+            </div>
           </div>
+          
       </footer>
     </div>
   );
