@@ -130,13 +130,6 @@
   }
 }
 
-[data-theme="light"] .theme-bg {
-  background-image: url("/images/不要B我市集 (亮).png");
-}
-
-[data-theme="dark"] .theme-bg {
-  background-image: url("/images/不要B我市集 (暗).png");
-}
 
 html,
 body {

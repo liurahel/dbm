@@ -11,7 +11,11 @@ function Home() {
         </Helmet>
         <div className="flex flex-col items-center">
           <Navbar />
-          <div className="theme-bg w-full h-auto bg-cover bg-center"></div>
+          <img
+          src="/images/不要B我市集 (亮).png"
+          alt="不要B我市集"
+          className="w-full h-auto"
+          />
         </div>
         
         <Dbm className="content " />
