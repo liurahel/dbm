@@ -6,7 +6,7 @@ function ProductItem({ product }) {
       <section className="container max-w-xs sm:max-w-sm lg:max-w-md mx-auto">
          <div className="border border-gray-500 aspect-square rounded overflow-hidden">
             <Link to={`/products/id/${product.id}`}>
-            <img className="w-full max-w-[150px] sm:max-w-[200px] lg:max-w-[250px] aspect-square object-cover mx-auto rounded-md" src={product.cover} alt={product.title} />
+            <img className="w-full max-w-[150px] sm:max-w-[200px] lg:max-w-[250px] aspect-square object-cover mx-auto" src={product.cover} alt={product.title} />
             </Link>
          </div>
          <div className="title-text">
