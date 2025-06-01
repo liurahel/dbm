@@ -27,7 +27,7 @@ function App() {
               <Route path="id/:productId" element={<Product />} />
             </Route>
             <Route path="/shopper-shop" element={<ShopperShop />} />
-            <Route path="shoppers">
+            <Route path="shopper">
               <Route path="id/:shopperId" element={<Shopper />} />
             </Route>
             <Route path="/information" element={<Information />} />

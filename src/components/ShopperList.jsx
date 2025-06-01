@@ -1,30 +1,9 @@
-import React from 'react';
 import ShopperItem from './ShopperItem';
 
 function ShopperList({shoppers}) {
    return (
       <div className="flex flex-col items-center w-full max-w-screen-lg mx-auto px-5 content content-bf content-text">
-         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 justify-center gap-4 mx-auto w-full">
-            {shoppers.map(shopper => (
-               <ShopperItem key={shopper.id} shopper={shopper} />
-            ))}
-         </div>
-         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 justify-center gap-4 mx-auto w-full">
-            {shoppers.map(shopper => (
-               <ShopperItem key={shopper.id} shopper={shopper} />
-            ))}
-         </div>
-         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 justify-center gap-4 mx-auto w-full">
-            {shoppers.map(shopper => (
-               <ShopperItem key={shopper.id} shopper={shopper} />
-            ))}
-         </div>
-         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 justify-center gap-4 mx-auto w-full">
-            {shoppers.map(shopper => (
-               <ShopperItem key={shopper.id} shopper={shopper} />
-            ))}
-         </div>
-         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 justify-center gap-4 mx-auto w-full">
+         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-center gap-10 mx-auto w-full">
             {shoppers.map(shopper => (
                <ShopperItem key={shopper.id} shopper={shopper} />
             ))}

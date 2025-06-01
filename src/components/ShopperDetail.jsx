@@ -1,20 +1,4 @@
-import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import shoppers from "../json/shopper.json";
-
-function ShopperDetail() {
-  const { shopperId } = useParams(); // 這裡改成 productId
-  const [shopper, setShopper] = useState(null);
-  const [qty, setQty] = useState(1);
-
-  useEffect(() => {
-    const foundShopper = shoppers.find((p) => String(p.id) === String(shopperId));
-    setShopper(foundShopper);
-    if (foundShopper) {
-      setQty(foundShopper.stock > 0 ? 1 : 0);
-    }
-  }, [shopperId]);
-
+function ShopperDetail({ shopper }) {
   if (!shopper) {
     return <div className="text-center mt-10">找不到商家</div>;
   }
@@ -35,7 +19,7 @@ function ShopperDetail() {
           <div className="lg:col-span-14 px-4">
             <h2 className="stitle-text text-sm sm:text-base lg:text-lg font-bold mb-1 ">{shopper.author}</h2>
             <h1 className="title-text text-2xl sm:text-3xl lg:text-4xl  font-bold mb-2">{shopper.author}</h1>
-            <p className="content-text text-base mb-4">{shopper.author}</p>
+            <p className="content-text text-base mb-4">{shopper.description}</p>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 import Header from "../components/Header";
-import shoppers from '../json/dbm.json';
+import shoppers from '../json/shopper.json';
 import ShopperDetail from "../components/ShopperDetail";
 import Footer from "../components/Footer/index";
 import { Helmet } from 'react-helmet-async';
