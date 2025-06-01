@@ -12,6 +12,7 @@ import Shopper from "./pages/Shopper"
 import ScrollToTop from "./components/ScrollToTop";
 import Information from "./pages/Information";
 import Problem from "./pages/Problem";
+import ShopperShop from "./pages/ShopperShop";
 
 function App() {
   return (
@@ -25,7 +26,10 @@ function App() {
             <Route path="products">
               <Route path="id/:productId" element={<Product />} />
             </Route>
-            <Route path="/shopper" element={<Shopper />} />
+            <Route path="/shopper-shop" element={<ShopperShop />} />
+            <Route path="shoppers">
+              <Route path="id/:shopperId" element={<Shopper />} />
+            </Route>
             <Route path="/information" element={<Information />} />
             <Route path="/problem" element={<Problem />} />
           </Routes>
