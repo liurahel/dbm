@@ -41,6 +41,9 @@
   .stitle-text {
     color: #686868;
   }
+  .price-text {
+    color: #854D8E;
+  }
   .footer-bg {
     background-color: #854D8E;
   }
@@ -97,6 +100,9 @@
   }
   .stitle-text {
     color: #E0E0E0;
+  }
+  .price-text {
+    color: #FBCD5C;
   }
   .footer-bg {
     background-color: #FBCD5C;

@@ -1,5 +1,5 @@
 import "antd/dist/reset.css"
-import { BrowserRouter, Routes, Route, Link } from "react-router";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Provider } from "react-redux"
 import { HelmetProvider } from 'react-helmet-async'
 
@@ -9,12 +9,14 @@ import OnlineShop from "./pages/OnlineShop"
 import Product from "./pages/Product";
 import store from "./redux/store";
 import Shopper from "./pages/Shopper"
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <HelmetProvider context={{}}>
       <Provider store={store}>
         <BrowserRouter>
+        <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/online-shop" element={<OnlineShop />} />

@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import _ from "lodash";
 
 function ProductItem({ product }) {
@@ -10,14 +10,14 @@ function ProductItem({ product }) {
             </Link>
          </div>
          <div className="title-text">
-            <h5 className="mt-2 truncate w-full overflow-hidden whitespace-nowrap font-semibold text-sm sm:text-base lg:text-lg">
+            <h5 className="w-full overflow-hidden line-clamp-2 font-semibold text-sm sm:text-base lg:text-lg min-h-[3.5rem]">
                {product.title}
             </h5>
-            <h6 className="text-sm sm:text-base lg:text-lg stitle-text">
+            <h6 className="truncate w-full overflow-hidden whitespace-nowrap text-xs sm:text-sm lg:text-base stitle-text">
                {product.author}
             </h6>
-            <div className="flex justify-between flex-wrap title-text">
-               <span className="items-center leading-none text-lg mt-2">
+            <div className="flex justify-between flex-wrap price-text">
+               <span className="items-center leading-none text-lg">
                   NT$ {product.price}
                </span>
             </div>
