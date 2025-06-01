@@ -10,6 +10,8 @@ import Product from "./pages/Product";
 import store from "./redux/store";
 import Shopper from "./pages/Shopper"
 import ScrollToTop from "./components/ScrollToTop";
+import Information from "./pages/Information";
+import Problem from "./pages/Problem";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
               <Route path="id/:productId" element={<Product />} />
             </Route>
             <Route path="/shopper" element={<Shopper />} />
+            <Route path="/information" element={<Information />} />
+            <Route path="/problem" element={<Problem />} />
           </Routes>
         </BrowserRouter>
       </Provider>

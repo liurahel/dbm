@@ -6,9 +6,11 @@ import { useState } from "react";
 
 export default function NavBar() {
   const navBarContent = [
-    { to: "/", label: "市集首頁" },
+    { to: "/", label: "關於首頁" },
+    { to: "/information", label: "市集資訊" },
     { to: "/online-shop", label: "線上市集" },
     { to: "/shopper", label: "攤位名單" },
+    { to: "/problem", label: "常見問題" },
   ];  
   const [isOpen, setIsOpen] = useState(false)
 
