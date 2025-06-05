@@ -16,7 +16,7 @@ export default function SetColorMode() {
    }
 
    return (
-      <div onClick={toggleColor} className="absolute item-center sm:right-5 right-4 cursor-pointer" >
+      <div onClick={toggleColor} className="cursor-pointer group" >
          {
             lightMode ? (
                <Sun className="sm:w-6 sm:h-6 w-8 h-8 text-current group-hover:scale-105 transition-transform" />

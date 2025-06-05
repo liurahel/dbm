@@ -1,6 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
+import UserInfo from './UserInfo';
 import CartSummary from './CartSummary';
-import SetColorMode from "../components/SetColorMode";
+import SetColorMode from "./SetColorMode";
 import HamMenu from "./HamMenu";
 import { useState } from "react";
 
@@ -15,7 +16,7 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const NavBarContent = () => (
-    <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center mt-2">
+    <div className="flex flex-row gap-8 justify-center items-center whitespace-nowrap">
       {navBarContent.map(({ to, label }) => (
         <NavLink
         key={to}
@@ -36,19 +37,33 @@ export default function NavBar() {
   return (
     <>
     {/* 桌面版導覽列 */}
-    <div className="hidden md:flex justify-aroundflex items-center h-20 w-6xl fixed top-2 z-50 px-4 py-4 shadow-md rounded-[20px] nav-bg nav-text">
-      <div className="flex items-center justify-center max-w-6xl mx-auto">
+    <div className="hidden md:flex justify-around items-center h-20 w-6xl fixed top-2 z-50 px-4 py-4 shadow-md rounded-[20px] nav-bg nav-text">
+      <div className="flex items-center justify-between w-full max-w-6xl mx-auto">
         <Link to="/">
-        <img src="/images/企劃書.png" alt="不要B我LOGO" className="w-30 h-auto absolute item-center left-2 md:left-6 top-1.5 cursor-pointer
+        <img src="/images/企劃書.png" alt="不要B我LOGO" className="w-30 h-auto absolute items-center left-2 md:left-6 top-1.5 cursor-pointer
         transition-transform duration-300 hover:animate-spin" /></Link>
-        <NavBarContent />
+        
+        <div className="absolute left-1/2 transform -translate-x-1/2 z-0">
+          <NavBarContent />
+        </div>
+
         {/* 右側購物車 */}
+          <div className="flex space-x-4 items-center mr-5">
+              <UserInfo />
+              <CartSummary />
+              <div className="flex items-center icon-text">
+                <SetColorMode/>
+              </div>
+          </div>
+          {/*<div className="flex items-center">
+            <UserInfo />
+          </div>
           <div className="flex items-center">
             <CartSummary />
           </div>
           <div className="flex items-center">
             <SetColorMode/>
-          </div>
+          </div>*/}
       </div>
     </div>
 
@@ -72,14 +87,21 @@ export default function NavBar() {
             </Link>
           </div>
         </div>
-        <div className="flex space-x-4 items-center icon-text ">
+        <div className="flex space-x-2 items-center justify-end fixed top-10 right-5">
+          <UserInfo />
+          <CartSummary />
+          <div className="flex items-center icon-text">
+            <SetColorMode/>
+          </div>
+        </div>
+        {/* <div className="flex space-x-4 items-center icon-text ">
           <div className="sm:flex w-10 h-10 justify-center items-center">
             <CartSummary />
           </div>
           <div className="sm:flex w-10 h-10 justify-center items-center">
             <SetColorMode />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

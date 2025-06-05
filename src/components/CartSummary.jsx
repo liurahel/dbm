@@ -16,7 +16,7 @@ function CartSummary() {
     <>
         <nav
             onClick={toggleModal}
-            className="leading-none inline-block absolute item-center sm:right-14 right-16 cursor-pointer"
+            className="cursor-pointer flex flex-col items-center group"
         >
             <div className="indicator">
                 {count > 0 && <span className="indicator-item badge badge-primary font-bold icon-bg iccon-text transform scale-80">{count}</span>}

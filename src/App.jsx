@@ -13,6 +13,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import Information from "./pages/Information";
 import Problem from "./pages/Problem";
 import ShopperShop from "./pages/ShopperShop";
+import Login from "./pages/Login";
+import Register from "./pages/Register";  
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
             </Route>
             <Route path="/information" element={<Information />} />
             <Route path="/problem" element={<Problem />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} /> 
           </Routes>
         </BrowserRouter>
       </Provider>
