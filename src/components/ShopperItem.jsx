@@ -9,8 +9,8 @@ function ShopperItem({ shopper }) {
             <img className="w-full max-w-[150px] sm:max-w-[200px] lg:max-w-[250px] aspect-square object-cover mx-auto" src={shopper.cover} alt={shopper.author} />
             </Link>
          </div>
-         <div className="title-text">
-            <h6 className="truncate w-full overflow-hidden whitespace-nowrap text-xs sm:text-sm lg:text-base stitle-text">
+         <div className="title-text mt-4">
+            <h6 className="truncate w-full overflow-hidden whitespace-nowrap text-center title-text text-base :text-sm lg:text-lg  font-bold">
                {shopper.author}
             </h6>
          </div>
