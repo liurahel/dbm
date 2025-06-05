@@ -7,7 +7,7 @@ function ProductList({products}) {
 
    return (
       <div className="flex flex-col items-center w-full max-w-screen-lg mx-auto px-5 content content-bf content-text">
-         <div className="flex items-center gap-3 text-left self-start mb-4">
+         <div className="mt-10 flex items-center gap-3 text-left self-start mb-4">
             <div className="w-4 h-7 rounded-tl-lg rounded-bl-lg icon-bg"></div>
             <span className="title-text text-2xl font-medium">熱門商品</span>
          </div>

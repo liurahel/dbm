@@ -72,18 +72,6 @@
        "description": "這是第一個作者的描述，這裡可以放一些關於他的背景信息或作品介紹。"
    },
    {
-       "id": 13,
-       "author": "???",
-       "cover":"/images/poeple/013.jpg",
-       "description": "這是第一個作者的描述，這裡可以放一些關於他的背景信息或作品介紹。"
-   },
-   {
-       "id": 14,
-       "author": "???",
-       "cover":"/images/poeple/014.jpg",
-       "description": "這是第一個作者的描述，這裡可以放一些關於他的背景信息或作品介紹。"
-   },
-   {
        "id": 15,
        "author": "阿啾小劇場",
        "cover":"/images/poeple/015.jpg",
@@ -111,12 +99,6 @@
        "id": 19,
        "author": "右手超人",
        "cover":"/images/poeple/019.jpg",
-       "description": "這是第一個作者的描述，這裡可以放一些關於他的背景信息或作品介紹。"
-   },
-   {
-       "id": 20,
-       "author": "右手超人",
-       "cover":"/images/poeple/001.jpeg",
        "description": "這是第一個作者的描述，這裡可以放一些關於他的背景信息或作品介紹。"
    },
    {
