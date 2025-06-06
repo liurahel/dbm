@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Header from "../components/Header";
 import ProductList from "../components/ProductList";
 import Footer from "../components/Footer/index";
@@ -11,10 +12,12 @@ function OnlineShop() {
         <Helmet>
           <title>不要B我市集 | 線上市集</title>
         </Helmet>
-        <Header 
+        <Link to="/online-shop">
+          <Header 
           title="線上市集"
           className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold"
         />
+        </Link>
         <ProductList products={products} className="content grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4" /> 
         <Footer className="footer mt-8 sm:mt-12 lg:mt-16" />
       </div>
