@@ -4,24 +4,36 @@ import { User, Lock, Eye, EyeClosed } from "lucide-react";
 /*import { FormInput, FormError, AuthFormLayout } from "@/components/common";*/
 import { auth } from "../api/firebaseConfig";
 import { signInWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 
-signInWithEmailAndPassword(auth, "user@example.com", "password123")
-  .then((userCredential) => {
-    alert("登入成功！使用者：" + userCredential.user.email);
-  })
-  .catch((error) => {
-    alert("登入失敗：" + error.message);
-  });
-
-const LoginCard = ({ redirect }) => {
+const LoginCard = () => {
+    const navigate = useNavigate();
+    const [searchParams] = useSearchParams();
+    const redirect = searchParams.get("redirect"); // 從網址拿參數
     const isRemember = false;
     const [formData, setFormData] = useState({
         email: "",
         password: "",
+        agreement: false,
     });
 
     /*const onChange = (e) => {};*/
-    const onFinish = (e) => {
+    const onFinish = async (e) => {
+    e.preventDefault();
+    const { email, password } = formData;
+
+    try {
+    const userCredential = await signInWithEmailAndPassword(
+        auth,
+        formData.email,
+        formData.password
+        );
+        alert("登入成功！");
+        navigate(redirect || "/");
+    } catch (error) {
+        alert("登入失敗：" + error.message);
+    }
     };
     const [showPassword, setShowPassword] = useState(false);
 
@@ -37,32 +49,19 @@ const LoginCard = ({ redirect }) => {
                 
                 <div className="relative">
                     <input
-                        type="email"
-                        name="email"
-                        placeholder="name@example.com"
-                        className="input w-full pl-10 focus:border-2 focus:border-gray-400 focus:ring-0 focus:outline-none placeholder:text-sm text-base"
-                        required
+                    type="email"
+                    name="email"
+                    placeholder="name@example.com"
+                    value={formData.email}
+                    onChange={e => setFormData({ ...formData, email: e.target.value })}
+                    className="input w-full pl-10 focus:border-2 focus:border-gray-400 focus:ring-0 focus:outline-none placeholder:text-sm text-base"
+                    required
                     />
                     <User
                         className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 border-gray-500 pointer-events-none z-10"
                     />
                 </div>
             </div>
-            {/*<div>
-                <label className="label">
-                    <span className="label-text">密碼</span>
-                </label>
-                <div className="relative">
-                    <input
-                        type="password"
-                        name="password"
-                        placeholder="At least 6 characters"
-                        className="input w-full pl-10 focus:border-2 focus:border-gray-400 focus:ring-0 focus:outline-none placeholder:text-sm text-base"
-                        required
-                    />
-                    <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 border-gray-500 pointer-events-none z-10" />
-                </div>
-            </div>*/}
              <div>
                 <label className="label">
                     <span className="label-text">密碼</span>
@@ -72,6 +71,8 @@ const LoginCard = ({ redirect }) => {
                     type={showPassword ? "text" : "password"}
                     name="password"
                     placeholder="At least 6 characters"
+                    value={formData.password}
+                    onChange={e => setFormData({ ...formData, password: e.target.value })}
                     className="input w-full pl-10 pr-10 focus:border-2 focus:border-gray-400 focus:ring-0 focus:outline-none placeholder:text-sm text-base"
                     required
                     />

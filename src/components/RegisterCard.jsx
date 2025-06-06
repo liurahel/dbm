@@ -4,17 +4,6 @@ import { Mail, Lock, User, Eye, EyeClosed } from "lucide-react";
 import { auth } from "../api/firebaseConfig";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 
-const email = "user@example.com"; // 使用者輸入的 Email
-const password = "password123"; // 使用者輸入的密碼
-
-createUserWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    alert("帳號註冊成功！使用者：" + userCredential.user.email);
-  })
-  .catch((error) => {
-    alert("註冊失敗：" + error.message);
-  });
-
 const RegisterCard = ({ redirect }) => {
 
   const [formData, setFormData] = useState({
@@ -25,8 +14,30 @@ const RegisterCard = ({ redirect }) => {
     agreement: false,
   });
 
-  const onFinish = (e) => {
+  const onFinish = async (e) => {
+  e.preventDefault(); // 阻止表單預設提交行為
+
+  const { email, password, rePassword, agreement } = formData;
+
+  // 基本驗證
+  if (!agreement) {
+    alert("請勾選同意條款");
+    return;
+  }
+  if (password !== rePassword) {
+    alert("兩次輸入的密碼不一致");
+    return;
+  }
+
+  try {
+    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+    alert("帳號註冊成功！使用者：" + userCredential.user.email);
+    // TODO: 你可以在這裡導向頁面或清空表單
+  } catch (error) {
+    alert("註冊失敗：" + error.message);
+  }
   };
+
   const [showPassword, setShowPassword] = useState(false);
   const [showRePassword, setShowRePassword] = useState(false);
 
