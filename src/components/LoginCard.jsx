@@ -1,9 +1,16 @@
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 import { User, Lock, Eye, EyeClosed } from "lucide-react";
+/*import { FormInput, FormError, AuthFormLayout } from "@/components/common";*/
 
 const LoginCard = ({ redirect }) => {
+    const isRemember = false;
+    const [formData, setFormData] = useState({
+        email: "",
+        password: "",
+    });
 
+    /*const onChange = (e) => {};*/
     const onFinish = (e) => {
     };
     const [showPassword, setShowPassword] = useState(false);
@@ -24,7 +31,6 @@ const LoginCard = ({ redirect }) => {
                         name="email"
                         placeholder="name@example.com"
                         className="input w-full pl-10 focus:border-2 focus:border-gray-400 focus:ring-0 focus:outline-none placeholder:text-sm text-base"
-                    
                         required
                     />
                     <User
@@ -75,8 +81,8 @@ const LoginCard = ({ redirect }) => {
                 <label className="flex items-center space-x-2 cursor-pointer">
                     <input
                         type="checkbox"
-                        checked={false}
-                        onChange={e => {}}
+                        checked={formData.agreement}
+                        onChange={e => setFormData({ ...formData, agreement: e.target.checked })}
                         className="checkbox"
                     />
                     <span className="label-text">記住我</span>
@@ -93,7 +99,7 @@ const LoginCard = ({ redirect }) => {
             </button>
             <div className="h-1 sm:h-2 lg:h-4"></div>
             <p className="text-xs text-center"> 
-                還沒有帳戶？ <Link to={`/auth/register?redirect=${redirect}`} className="link link-primary  no-underline hover:underline ">註冊</Link>
+                還沒有帳戶？ <Link to={`/auth/register?redirect=${redirect}`} className="link link-primary no-underline hover:underline">註冊</Link>
             </p>
         </form>
     );

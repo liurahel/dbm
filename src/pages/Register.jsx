@@ -4,20 +4,20 @@ import RegisterCard from "../components/RegisterCard";
 import Footer from "../components/Footer";
 
 function Register() {
-    const title = "Register";
     
     return (
-    <div className="main-layout min-h-screen">
+    <div className="main-layout min-h-screen white-bg">
         <div className="container mx-auto">
             <Helmet>
-                <title>{title}</title>
+                <title>不要B我市集 | 註冊</title>
             </Helmet>
             <Herder 
-                title={title}
+                title="註冊"
+                className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold"
             />
             <RegisterCard/>
         </div>
-        <Footer  className="footer"/>
+        <Footer />
     </div>  
   );
 }

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 function UserInfo(props) {
     const navigate = useNavigate();
     const goToProfile = () => {
-        navigate("/login");
+        navigate("/auth/login");
     };
 
     return (

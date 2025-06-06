@@ -34,8 +34,8 @@ function App() {
             </Route>
             <Route path="/information" element={<Information />} />
             <Route path="/problem" element={<Problem />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} /> 
+            <Route path="/auth/login" element={<Login />} />
+            <Route path="/auth/register" element={<Register />} /> 
           </Routes>
         </BrowserRouter>
       </Provider>

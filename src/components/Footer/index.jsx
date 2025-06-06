@@ -12,15 +12,30 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pr-40 sm:gap-6 sm:p-0 max-w-screen-xl mx-auto">{/*sm:px-4 pb-5 border-b-1*/}
           <div>
             <h4 className="font-bold mb-2 text-sm sm:text-base">不要B我市集</h4>
-              <p className="text-xs sm:text-sm m-0 leading-relaxed">數位二甲 111219036 施亞蝶<br></br>數位二甲 111219035 劉恩伶<br></br>113學年第二學期<br></br>跨平台前端工程設計 期末專題</p>
+              <div>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">數位二甲 111219036 施亞蝶</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">數位二甲 111219035 劉恩伶</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">113學年第二學期</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">跨平台前端工程設計 期末專題</p>
+              </div>
           </div>
           <div>
             <h4 className="font-bold mb-2 text-sm sm:text-base">攤位相關</h4>
-              <p className="text-xs sm:text-sm m-0 leading-relaxed">報名方式<br></br>注意事項<br></br>收費制度<br></br>攤位地圖</p>
+              <div>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">報名方式</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">注意事項</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">收費制度</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">攤位地圖</p>
+              </div>
           </div>
           <div>
             <h4 className="font-bold mb-2 text-sm sm:text-base">常見問題</h4>
-              <p className="text-xs sm:text-sm m-0 leading-relaxed">訊息公告<br></br>退貨政策<br></br>訂單查詢<br></br>服務條款</p>
+              <div>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">訊息公告</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">退貨政策</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">訂單查詢</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">服務條款</p>
+              </div>
           </div>
           <div>
             <h4 className="font-bold mb-2 text-sm sm:text-base">聯絡資訊</h4>
@@ -47,7 +62,7 @@ export default function Footer() {
         {/* 版權 */}
         <div className="w-full px-4">
           <div className="max-w-5xl mx-auto text-center">
-            <hr className="my-2 mt-5 w-xs sm:w-5xl sm:my-4 icon-text mx-auto" /> 
+            <hr className="mb-2 mt-6 w-xs sm:w-5xl sm:mb-4 sm:mt-8 icon-text mx-auto" /> 
             <span className="text-xs sm:text-sm group">
               ©不要
               <span className="inline-block group-hover:scale-125 group-hover:tracking-widest transition-transform duration-200">B</span>
