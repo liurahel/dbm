@@ -1,18 +1,41 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { motion } from "framer-motion";
 
 function Dbm() {
   return (
     <>
+    
     <div className="flex flex-col items-center content !mb-0 w-full max-w-screen-lg mx-auto">
-
+    
       {/* 給喜歡圖文創作的你 */}
-
-      <span className="title-tex text-4xl font-bold sm:text-3xl">給喜歡圖文創作的你</span>
+      <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: false }}
+      className="flex flex-col items-center  !mb-0 w-full max-w-screen-lg mx-auto"
+    >
+        <span className="title-tex text-4xl font-bold sm:text-3xl">給喜歡圖文創作的你</span>
+    </motion.div>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: false }}
+      className="flex flex-col items-center  !mb-0 w-full max-w-screen-lg mx-auto"
+    >
       <div className="flex items-center gap-3 text-left self-start sm:mt-10 mt-10 mb-4 px-5">
             <div className="w-4 h-7 sm:w-4 sm:h-7 icon-bg rounded-tl-lg rounded-bl-lg"></div>
             <span className="title-tex text-2xl sm:text-2xl font-medium">開心，是我們所願。</span>
       </div>
+      </motion.div>
+      <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: false }}
+    >
       <div className="flex flex-col sm:flex-row justify-between items-start gap-6 w-full">
         <span className="content-text leading-relaxed mb-0 px-5 text-lg w-full sm:text-base">
           嘿～不要逼我長大、不要逼我上班、不要逼我放棄創作，<br className="sm:inline hidden" />
@@ -32,7 +55,14 @@ function Dbm() {
         className="w-96 max-w-xs m-auto sm:max-w-sm lg:max-w-lg h-auto object-contain cursor-pointer
         transition-transform duration-300 hover:animate-spin" />
       </div>            
-
+    </motion.div>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: false }}
+      className="flex flex-col items-center  !mb-0 w-full max-w-screen-lg mx-auto"
+    >
       {/* 本次市集 */}
       <span className="title-tex mt-10 mb-10 text-4xl font-bold sm:text-3xl">本次市集</span> 
       <div className="icon-bg rounded-lg flex flex-col sm:flex-row w-full h-32 sm:h-24 px-14 sm:px-24 items-center justify-center text-center">
@@ -58,16 +88,37 @@ function Dbm() {
           <span className="text-[#FFFFFF] text-xl sm:text-2xl font-bold hover:text-[#FBCD5C] transition">攤位名單</span>
         </div>   
       </Link>
-
+    </motion.div>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: false }}
+      className="flex flex-col items-center  !mb-0 w-full max-w-screen-lg mx-auto"
+    >
       {/* 交通指引 */}        
       <span className="title-tex mt-20 mb-5 text-4xl font-bold sm:text-3xl">交通指引</span> 
       <p className="content-text leading-relaxed text-lg sm:text-base">
         地址：106台北市大安區和平東路二段134號
       </p>
+      </motion.div>
     </div>
-    
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: false }}
+      className="flex flex-col items-center  !mb-0 w-full max-w-screen-lg mx-auto"
+    >
     <img src="/images/map.png" alt="地圖" className="w-full h-auto max-w-full sm:max-w-md md:max-w-lg lg:max-w-full mx-auto" />
-
+    </motion.div>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: false }}
+      className="flex flex-col items-center  !mb-0 w-full max-w-screen-lg mx-auto"
+    >
     <div className="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-black content-bf content-text p-4">
       {/* MRT */}
       <ul className="px-4 pb-4 md:pb-0 flex pt-5">
@@ -153,8 +204,8 @@ function Dbm() {
           </ul>
         </div>
       </div>
-
     </div>
+    </motion.div>
     </>
   );
 }
