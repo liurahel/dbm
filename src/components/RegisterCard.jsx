@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import { Mail, Lock, User, Eye, EyeClosed } from "lucide-react";
 import { auth } from "../api/firebaseConfig";
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 const RegisterCard = ({ redirect }) => {
-
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -30,10 +31,14 @@ const RegisterCard = ({ redirect }) => {
   }
 
   try {
-    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-    alert("帳號註冊成功！使用者：" + userCredential.user.email);
-    // TODO: 你可以在這裡導向頁面或清空表單
+  const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+  console.log("註冊成功:", userCredential);
+  alert("帳號註冊成功！使用者：" + userCredential.user.email);
+  setTimeout(() => {
+    navigate(redirect || "/");
+  }, 100);
   } catch (error) {
+    console.error("註冊失敗錯誤資訊:", error);
     alert("註冊失敗：" + error.message);
   }
   };

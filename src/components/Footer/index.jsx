@@ -13,28 +13,28 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-2 text-sm sm:text-base">不要B我市集</h4>
               <div>
-                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">數位二甲 111219036 施亞蝶</p>
-                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">數位二甲 111219035 劉恩伶</p>
-                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">113學年第二學期</p>
-                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">跨平台前端工程設計 期末專題</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose ">數位二甲 111219036 施亞蝶</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose ">數位二甲 111219035 劉恩伶</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose ">113學年第二學期</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose ">跨平台前端工程設計 期末專題</p>
               </div>
           </div>
           <div>
             <h4 className="font-bold mb-2 text-sm sm:text-base">攤位相關</h4>
               <div>
-                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">報名方式</p>
-                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">注意事項</p>
-                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">收費制度</p>
-                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">攤位地圖</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc] cursor-pointer">報名方式</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc] cursor-pointer">注意事項</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc] cursor-pointer">收費制度</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc] cursor-pointer">攤位地圖</p>
               </div>
           </div>
           <div>
             <h4 className="font-bold mb-2 text-sm sm:text-base">常見問題</h4>
               <div>
-                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">訊息公告</p>
-                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">退貨政策</p>
-                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">訂單查詢</p>
-                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc]">服務條款</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc] cursor-pointer">訊息公告</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc] cursor-pointer">退貨政策</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc] cursor-pointer">訂單查詢</p>
+                <p className="text-xs sm:text-sm !mb-0 leading-loose hover:text-[#f8eacc] cursor-pointer">服務條款</p>
               </div>
           </div>
           <div>

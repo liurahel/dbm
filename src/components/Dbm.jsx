@@ -80,7 +80,7 @@ function Dbm() {
       </div>     
       <div className="h-2 sm:h-4 lg:h-8"></div>
 
-      <Link to="/shopper">
+      <Link to="/shopper-shop">
         {/*<div className="icon-bg rounded-lg flex w-48 h-14 sm:w-36 sm:h-16 items-center justify-center">
           <span className="just-text text-xl sm:text-2xl font-bold">攤位名單</span></div>*/}
         <div className="bg-[#854D8E] hover:bg-[#9b66a4] transition-all duration-300 rounded-lg flex w-48 h-14 sm:w-36 sm:h-16 items-center justify-center 
