@@ -1,6 +1,19 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Mail, Lock, User, Eye, EyeClosed } from "lucide-react";
+import { auth } from "../api/firebaseConfig";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+
+const email = "user@example.com"; // 使用者輸入的 Email
+const password = "password123"; // 使用者輸入的密碼
+
+createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    alert("帳號註冊成功！使用者：" + userCredential.user.email);
+  })
+  .catch((error) => {
+    alert("註冊失敗：" + error.message);
+  });
 
 const RegisterCard = ({ redirect }) => {
 
