@@ -2,6 +2,16 @@ import { useState } from "react";
 import { Link } from 'react-router-dom';
 import { User, Lock, Eye, EyeClosed } from "lucide-react";
 /*import { FormInput, FormError, AuthFormLayout } from "@/components/common";*/
+import { auth } from "../api/firebaseConfig";
+import { signInWithEmailAndPassword } from "firebase/auth";
+
+signInWithEmailAndPassword(auth, "user@example.com", "password123")
+  .then((userCredential) => {
+    alert("登入成功！使用者：" + userCredential.user.email);
+  })
+  .catch((error) => {
+    alert("登入失敗：" + error.message);
+  });
 
 const LoginCard = ({ redirect }) => {
     const isRemember = false;
