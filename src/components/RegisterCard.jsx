@@ -133,7 +133,7 @@ const RegisterCard = ({ redirect }) => {
           className="checkbox"
         />
         <span className="text-sm">
-          I have read the <Link to="/" className="link link-primary">agreement</Link>
+          我已閱讀並接受上述 <Link to="/" className="link link-primary">條款</Link>
         </span>
       </div>
 

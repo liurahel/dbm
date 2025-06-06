@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import Header from "../components/Header";
 import shoppers from '../json/shopper.json';
@@ -15,10 +16,12 @@ function Shopper() {
         <Helmet>
             <title>不要B我市集 | 攤位名單</title>
         </Helmet>
-        <Header 
-          title="攤位名單"
-          className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold"
-        />
+        <Link to="/shopper-shop">
+          <Header 
+            title="攤位名單"
+            className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold"
+          />
+        </Link>
         <ShopperDetail shopper={shopper} className="content max-w-full sm:max-w-2xl lg:max-w-4xl mx-auto" /> 
         <Footer className="footer mt-8 sm:mt-12 lg:mt-16" />
       </div>
